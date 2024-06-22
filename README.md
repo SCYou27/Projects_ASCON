@@ -18,8 +18,8 @@ PhD thesis, 2022, DOI: https://doi.org/10.17863/CAM.100592
 
 With the parameters and software version that we stated in our paper, we provide three different implementations of ASCON-128, a variant of ASCON AEAD:
 
-U-Os experiments (project_U-Os): an unmasked implementation with compiler optimization option "-Os".
-U-O3 experiments (project_U-O3): an unmasked implementation with compiler optimization option "-O3".
-M-Os experiments (project_M-Os): a masked implementation with compiler optimization option "-Os".
+U-Os experiments (project_U-Os): an unmasked implementation with compiler optimization option "-Os".  
+U-O3 experiments (project_U-O3): an unmasked implementation with compiler optimization option "-O3".  
+M-Os experiments (project_M-Os): a masked implementation with compiler optimization option "-Os".  
 
 
