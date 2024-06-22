@@ -1,4 +1,5 @@
-# Projects ASCON: building templates for recovering ASCON keys
+# Projects ASCON:  
+# building templates for recovering ASCON keys
 
 The ASCON dataset contains recordings of the power-supply current changes of the 32-bit processor STM32F303RCT7, which has one ARM Cortex-M4 core, on a ChipWhisperer-Lite (CW-Lite) board.
 
