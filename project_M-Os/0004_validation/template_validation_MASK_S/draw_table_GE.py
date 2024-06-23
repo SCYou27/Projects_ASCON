@@ -1,0 +1,55 @@
+import numpy as np
+import sys
+
+TAG = 'O004'
+Dir_Name = './Rank_'+TAG+'/'
+
+def Draw(func, outname, L, U):
+  Ranks = []
+  Tnum = 100.0*(U-L)
+  Size = 16
+  N_lane = 2
+  for b in range(0, Size):
+    Ranks.append([])
+  for b in range(0, Size):
+    print(('Byte #'+str(b).zfill(3)))
+    byte_head = Dir_Name+'rank_'+func+'_b'+str(b).zfill(3)
+    for sets in range(L, U):
+      filename = byte_head+'_s'+str(sets).zfill(3)+'.npy' 
+      res = np.load(filename)
+      for t in range(0, len(res)):
+        Ranks[b].append(res[t])
+  Output_str = '\\begin{tabular}{|c|*{8}{r|}}\n\\hline\n\\backslashbox{$(i,j)$}{$k$} '
+  for k in range(0, 8):
+    Output_str += ('&\n\\multicolumn{1}{c|}{'+str(k)+'}')
+  Output_str += '\\\\\n\\hline\n'
+  for lane in range(0, N_lane):
+    lan_str = '('+str((lane%5))+', '+str(lane//5)+')'
+    for bt in range(0, 8):
+      byte = 8*lane+bt
+      #print byte
+      rank_log = np.log2(np.array(Ranks[byte])+1.0)
+      LGE = np.mean(rank_log)
+      temp = (format(LGE, '0.3f')).zfill(7)
+      if temp[0]=='0':
+        if temp[1]=='0':
+          temp = '\\0\\0'+temp[2:]
+        else:
+          temp = '\\'+temp
+      lan_str += (' & '+temp)
+    lan_str += '\\\\\n\\hline\n'
+    Output_str += lan_str
+  Output_str += '\\end{tabular}'
+  print(Output_str)
+  ofile = open(outname, 'w')
+  ofile.write(Output_str)
+  ofile.close()
+
+if __name__=='__main__':
+  Func = sys.argv[1]
+  Group = int(sys.argv[2])
+  Otn = 'Result_Tables/GE_table_'+Func+'_G'+str(Group)+'.txt'
+  Lower = Group*10
+  Upper = Group*10+10
+  Draw(Func, Otn, Lower, Upper)
+
