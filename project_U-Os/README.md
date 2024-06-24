@@ -1,25 +1,5 @@
 # Experiments on U-Os data set  
 
-<h2 id=Source>Source code for our targets</h2>
-
-<p>The source code of the ASCON AEAD implementations on CW-Lite is available below.</p>
-
-<ul>
-<li><a href="src_recording/ascon_src_website.zip">ascon_src_website.zip (updated: 2024-04-12)</a>
-</li>
-</ul>
-
-<p>With the parameters and software version that we stated in our paper, you can find the following compiled HEX files for three different versions of ASCON-128 implementations after decompressing the above ZIP file:</p>
-
-<ul>
-<li><b>U-Os experiments,</b> an unmasked implementation with compiler optimization option "-Os":<br>
-ascon_src/simpleserial-ascon-aead-128/simpleserial-aead-CWLITEARM.hex</li>
-<li><b>U-O3 experiments,</b> an unmasked implementation with compiler optimization option "-O3":<br>
-ascon_src/simpleserial-ascon-aead-128-O3/simpleserial-aead-CWLITEARM.hex</li>
-<li><b>M-Os experiments,</b> a masked implementation with compiler optimization option "-Os":<br>
-ascon_src/simpleserial-masked-ascon-aead-128/simpleserial-aead-CWLITEARM.hex</li>
-</ul>
-
 <h2 id=U-Os>U-Os experiments</h2>
 <h3 id=U-Os-recording>Code for recording on the NI platform</h3>
 
