@@ -31,3 +31,4 @@ With the parameters and software version that we stated in our paper, we also in
  -  **M-Os experiments,** a masked implementation with compiler optimization option "-Os":  
     ascon_src/simpleserial-masked-ascon-aead-128/simpleserial-aead-CWLITEARM.hex
 
+***The README files in these projects are still unfinished!***
