@@ -1,6 +1,7 @@
 # Experiments on U-Os data set  
 
-<h2 id=U-Os>U-Os experiments</h2>
+***I am still updating the information for this page...***
+<!--
 <h3 id=U-Os-recording>Code for recording on the NI platform</h3>
 
 <p>The Python scripts to control the recording platform is available below.</p>
@@ -388,4 +389,6 @@ resulting in <a href="U-Os/0004_validation/find_intermediates_16bit/intermediate
 </ul>
 
 <p>The remaining source code for our implementation of key enumeration and rank estimate will be released here soon ...</p>
+
+-->
 
