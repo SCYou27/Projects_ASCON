@@ -20,14 +20,14 @@ PhD thesis, 2022, DOI: https://doi.org/10.17863/CAM.100592
 
 The source code of the ASCON AEAD implementations on CW-Lite is available below.
 
-	- https://www.cl.cam.ac.uk/research/security/datasets/ascon/src_recording/ascon_src_website.zip
+	https://www.cl.cam.ac.uk/research/security/datasets/ascon/src_recording/ascon_src_website.zip
 
 With the parameters and software version that we stated in our paper, we also include the following compiled HEX files for three different versions of ASCON-128 implementations in the above ZIP file:  
 
-	- **U-Os experiments,** an unmasked implementation with compiler optimization option "-Os":  
-	ascon_src/simpleserial-ascon-aead-128/simpleserial-aead-CWLITEARM.hex
-	- **U-O3 experiments,** an unmasked implementation with compiler optimization option "-O3":
-	ascon_src/simpleserial-ascon-aead-128-O3/simpleserial-aead-CWLITEARM.hex
-	- **M-Os experiments,** a masked implementation with compiler optimization option "-Os":  
-	ascon_src/simpleserial-masked-ascon-aead-128/simpleserial-aead-CWLITEARM.hex
+ -  **U-Os experiments,** an unmasked implementation with compiler optimization option "-Os":  
+    ascon_src/simpleserial-ascon-aead-128/simpleserial-aead-CWLITEARM.hex
+ -  **U-O3 experiments,** an unmasked implementation with compiler optimization option "-O3":
+    ascon_src/simpleserial-ascon-aead-128-O3/simpleserial-aead-CWLITEARM.hex
+ -  **M-Os experiments,** a masked implementation with compiler optimization option "-Os":  
+    ascon_src/simpleserial-masked-ascon-aead-128/simpleserial-aead-CWLITEARM.hex
 
