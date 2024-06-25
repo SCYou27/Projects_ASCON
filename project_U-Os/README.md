@@ -4,7 +4,7 @@
 <!--
 <h3 id=U-Os-recording>Code for recording on the NI platform</h3>
 
-<p>The Python scripts to control the recording platform is available below.</p>
+<p>The Python scripts to control the recording platform are available below.</p>
 
 <ul>
 <li><a href="src_recording/CW_ASCON_recording_20240414.zip">CW_ASCON_recording_20240414.zip</a>
@@ -26,7 +26,7 @@
 <ul><li>python3 test_AEAD_128_Enc.py</li></ul>
 
 <h3 id=U-Os-reference>Reference traces</h3>
-<p>We recorded 1600 traces and take the arithmetic mean vector of them as a reference trace, so the later recorded traces can be compare against this reference trace to check whether some unexpected event happened and resulted in a wrong recording.</p>
+<p>We recorded 1600 traces and took the arithmetic mean vector of them as a reference trace, so the later recorded traces can be compared against this reference trace to check whether some unexpected event happened and resulted in a wrong recording.</p>
 
 <p>We first provide the Python code that generated all the input data (keys, nonces, plaintexts) for the recording and pre-calculated the corresponding output data (ciphertexts and tags) in the following ZIP file:</p>
 
