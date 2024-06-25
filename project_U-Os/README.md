@@ -1,5 +1,7 @@
 # Experiments on U-Os data set  
 
+When we recorded our traces for experiments, we categorized the traces into five different groups: _Reference, Detection, Profiling (Training), Validation, and Attack (Testing)_. In this repository, we **DO NOT** include our Python scripts for recording and for checking trace quality (the Reference set), but they can be found on our [university webpage](https://www.cl.cam.ac.uk/research/security/datasets/ascon/) for any interest in recording with the same National Instruments platform.
+
 ***I am still updating the information for this page...***
 <!--
 <h3 id=U-Os-recording>Code for recording on the NI platform</h3>
@@ -11,7 +13,7 @@
 </li>
 </ul>
 
-<p>When we recorded our traces for experiments, we categorized the traces into five different groups: Reference, Detection, Profiling (Training), Validation, and Attack (Testing). For each there is an independent subdirectroy, which contains the recording control scripts, the pre-generated input data (key, nonces, plaintexts), and the corresponding output data (ciphertexts and tags) for checking:</p>
+<p>When we recorded our traces for experiments, we categorized the traces into five different groups: Reference, Detection, Profiling (Training), Validation, and Attack (Testing). For each there is an independent subdirectory, which contains the recording control scripts, the pre-generated input data (key, nonces, plaintexts), and the corresponding output data (ciphertexts and tags) for checking:</p>
 
 <ul>
 <li><b>NI_RE_code:</b> Reference traces,</li>
