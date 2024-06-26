@@ -4,6 +4,8 @@ We recorded 1600 traces and took their arithmetic mean vector as a reference tra
 
 1. inter_gen/  
    This is to pre-generate the data interacting with the device (including the keys, nonces, plaintexts, and the corresponding ciphers and tags) for trace recording.
+
+***Work on this README file is still ongoing!***
 <!--
 <p>We first provide the Python code that generated all the input data (keys, nonces, plaintexts) for the recording and pre-calculated the corresponding output data (ciphertexts and tags) in the following ZIP file:</p>
 
