@@ -1,31 +1,13 @@
 # Experiments on U-Os data set  
 
-When we recorded our traces for experiments, we categorized the traces into five different groups: _Reference, Detection, Profiling (Training), Validation, and Attack (Testing)_. In this repository, we **DO NOT** include our Python scripts for [recording](https://www.cl.cam.ac.uk/research/security/datasets/ascon/index.html#U-Os-recording), but they can be found on our [university webpage](https://www.cl.cam.ac.uk/research/security/datasets/ascon/) for any interest in recording with the same National Instruments platform.
+When we recorded our traces for experiments, we categorized the traces into five different groups: _Reference, Detection, Profiling (Training), Validation, and Attack (Testing)_. In this repository, we **DO NOT** include our Python scripts for [recording](https://www.cl.cam.ac.uk/research/security/datasets/ascon/index.html#U-Os-recording), but they can be found on our [university webpage](https://www.cl.cam.ac.uk/research/security/datasets/ascon/) for any interest in recording with the same National Instruments platform.  
+
+When we recorded our traces for experiments, we categorized the traces into the following five different groups: _Reference, Detection, Profiling (Training), Validation, and Attack (Testing)_.  
 
 ***I am still updating the information for this page...***
 <!--
-<h3 id=U-Os-recording>Code for recording on the NI platform</h3>
 
-<p>The Python scripts to control the recording platform are available below.</p>
 
-<ul>
-<li><a href="src_recording/CW_ASCON_recording_20240414.zip">CW_ASCON_recording_20240414.zip</a>
-</li>
-</ul>
-
-<p>When we recorded our traces for experiments, we categorized the traces into five different groups: Reference, Detection, Profiling (Training), Validation, and Attack (Testing). For each there is an independent subdirectory, which contains the recording control scripts, the pre-generated input data (key, nonces, plaintexts), and the corresponding output data (ciphertexts and tags) for checking:</p>
-
-<ul>
-<li><b>NI_RE_code:</b> Reference traces,</li>
-<li><b>NI_DN_code:</b> Detection traces,</li>
-<li><b>NI_TR_code:</b> Profiling (Training) traces,</li>
-<li><b>NI_VA_code:</b> Validation traces,</li>
-<li><b>NI_TS_code:</b> Attack (Testing) traces.</li>
-</ul>
-
-<p>Meanwhile, the subdirectory "SRC_TEST/simpleserial-ascon-aead-128/" contains the target HEX file, and please execute the following command to write the HEX file onto the CW-Lite board and check the correctness of the implementation:</p>
-
-<ul><li>python3 test_AEAD_128_Enc.py</li></ul>
 
 <h3 id=U-Os-reference>Reference traces</h3>
 <p>We recorded 1600 traces and took the arithmetic mean vector of them as a reference trace, so the later recorded traces can be compared against this reference trace to check whether some unexpected event happened and resulted in a wrong recording.</p>
