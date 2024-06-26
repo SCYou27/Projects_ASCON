@@ -8,8 +8,9 @@ When we recorded our traces for experiments, we categorized the traces into the 
  -  **0003\_training:** to build our templates.
  -  **0004\_validation:** to validate our templates.
  -  **0005\_attack:** to recover keys used in ASCON AEAD with our attack scenario.
- 
-***I am still updating the information for this page...***
+
+Please check the REAMDE.md in each subdirectory for detailed instructions.
+
 <!--
 
 
