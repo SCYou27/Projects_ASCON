@@ -2,15 +2,20 @@
 
 When we recorded our traces for experiments, we categorized the traces into five different groups: _Reference, Detection, Profiling (Training), Validation, and Attack (Testing)_. In this repository, we **DO NOT** include our Python scripts for [recording](https://www.cl.cam.ac.uk/research/security/datasets/ascon/index.html#U-Os-recording), but they can be found on our [university webpage](https://www.cl.cam.ac.uk/research/security/datasets/ascon/) for any interest in recording with the same National Instruments platform.  
 
-When we recorded our traces for experiments, we categorized the traces into the following five different groups: _Reference, Detection, Profiling (Training), Validation, and Attack (Testing)_.  
-
+When we recorded our traces for experiments, we categorized the traces into the following five groups in separate subdirectories:  
+ -  **0001\_reference:** to find a reference trace for recording quality checking.
+ -  **0002\_detection:** to determine points of interest. 
+ -  **0003\_training:** to build our templates.
+ -  **0004\_validation:** to validate our templates.
+ -  **0005\_attack:** to recover keys used in ASCON AEAD with our attack scenario.
+ 
 ***I am still updating the information for this page...***
 <!--
 
 
 
 <h3 id=U-Os-reference>Reference traces</h3>
-<p>We recorded 1600 traces and took the arithmetic mean vector of them as a reference trace, so the later recorded traces can be compared against this reference trace to check whether some unexpected event happened and resulted in a wrong recording.</p>
+<p>We recorded 1600 traces and took their arithmetic mean vector as a reference trace, so the later recorded traces can be compared against this reference trace to check whether some unexpected event happened and resulted in a wrong recording.</p>
 
 <p>We first provide the Python code that generated all the input data (keys, nonces, plaintexts) for the recording and pre-calculated the corresponding output data (ciphertexts and tags) in the following ZIP file:</p>
 
