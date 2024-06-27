@@ -7,13 +7,13 @@ We recorded 16000 traces to select the points of interest (PoI) for template pro
 2. Download the raw traces:  
    The 16000 raw traces are stored in 100 ZIP files. Please download the raw traces with the following commands:  
    `cd Raw/`  
-   `./script\_all.sh`  
+   `./script_all.sh`  
    Alternatively, please visit our university webpage to manually download the files:  
    https://www.cl.cam.ac.uk/research/security/datasets/ascon/U-Os/index.html#DN  
 
 3. Check the raw traces and their corresponding AEAD outputs (ciphers and tags):  
    `cd preproc/`  
-   `./script\_all.sh`  
+   `./script_all.sh`  
    This will check the quality of the recorded traces against the reference trace ("0001\_reference/preproc/ref\_trace.npy") as well as whether the recorded responses from the CW-Lite board are equal to our pre-calculated ciphers and tags.
 
 ***This page is still unfinished!***
