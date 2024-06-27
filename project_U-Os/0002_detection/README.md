@@ -17,7 +17,15 @@ We recorded 16000 traces to select the points of interest (PoI) for template pro
    This will check the quality of the recorded traces against the reference trace ("0001\_reference/preproc/ref\_trace.npy") as well as whether the recorded responses from the CW-Lite board are equal to our pre-calculated ciphers and tags.
 
 4. **Calculate our target intermediate values:**  
-   With the pre-generated I/O data, we then calculated all the target intermediate values and cut them into bytes. As we mentioned in our paper, the bit-interleaving (slicing) technique is applied in our target implementations. This means that the bits in a 64-bit lane of our target intermediate values can be stored in two 32-bit registers, either separated into high and low bits or separated into even and odd bits.
+   With the pre-generated I/O data, we calculated all the target intermediate values and cut them into bytes. As we mentioned in our paper, the bit-interleaving (slicing) technique is applied in our target implementations. This means that a 64-bit lane of our target intermediate values will be stored in two 32-bit registers, either separated into high/low (H/L) bits or even/odd (E/O) bits.
+
+   We first calculated the target intermediate values in H/L bits (cut into bytes):  
+   `cd find_intermediates/`  
+   `./script_all.sh`  
+
+   Then we coverted the H/L data into the E/O data:  
+   `cd find_intermediates_sliced/`  
+   `./script_all.sh`  
    
 ***This page is still unfinished!***
 
