@@ -4,7 +4,12 @@ We recorded 16000 traces to select the points of interest (PoI) for template pro
 1. Generate I/O date:  
    The folder "inter_gen/" contains the pre-generated I/O data interacting with the device (including the keys, nonces, plaintexts, and the corresponding ciphers and tags) for trace recording. To prevent overwriting the data we had used, we moved the Python code into another folder "inter_gen_code/".  
 
-
+2.  Download the raw traces:
+    Please download the raw traces with the following commands:  
+    `cd Raw/`  
+    `./script_all.sh`  
+    Alternatively, please visit our university webpage to manually download the files:
+    https://www.cl.cam.ac.uk/research/security/datasets/ascon/U-Os/index.html#DN
 
 <p>With the pre-generated I/O data, we then calculated all the target intermediate values and cut them into bytes with the following code:</p>
 
