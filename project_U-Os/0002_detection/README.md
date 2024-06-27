@@ -19,7 +19,7 @@ We recorded 16000 traces to select the points of interest (PoI) for template pro
 4. **Calculate our target intermediate values:**  
    With the pre-generated I/O data, we calculated all the target intermediate values and cut them into bytes. As we mentioned in our paper, the bit-interleaving (slicing) technique is applied in our target implementations. This means that a 64-bit lane of our target intermediate values will be stored in two 32-bit registers, either separated into high/low (H/L) bits or even/odd (E/O) bits.
 
-   We first calculated the target intermediate values in H/L bits (cut into bytes):  
+   We first calculated the target intermediate values in 32-bit H/L words (cut into bytes):  
    `cd find_intermediates/`  
    `./script_all.sh`  
 
