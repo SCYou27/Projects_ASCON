@@ -1,13 +1,10 @@
 # Detection traces  
 We recorded 16000 traces to select the points of interest (PoI) for template profiling. This is to determine whether a time sample is related to our target intermediate values. In this attack, we determined whether a _clock cycle_ is interesting instead of individual samples. The tasks in this phase are as follows.  
 
-1. 
-<p>Similarly, we provide the Python code that generated all the data for the recording in the following ZIP file:</p>
+1. Generate I/O date:  
+   The folder "inter_gen/" contains the pre-generated I/O data interacting with the device (including the keys, nonces, plaintexts, and the corresponding ciphers and tags) for trace recording. To prevent overwriting the data we had used, we moved the Python code into another folder "inter_gen_code/".  
 
-<ul>
-<li><a href="U-Os/0002_detection/inter_gen_DN.zip">inter_gen_DN.zip (updated 2024-05-01)</a>
-</li>
-</ul>
+
 
 <p>With the pre-generated I/O data, we then calculated all the target intermediate values and cut them into bytes with the following code:</p>
 
