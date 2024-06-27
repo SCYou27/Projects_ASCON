@@ -1,9 +1,10 @@
 # Experiments on U-Os data set  
 
-When we recorded our traces for experiments, we categorized the traces into five different groups: _Reference, Detection, Profiling (Training), Validation, and Attack (Testing)_. In this repository, we **DO NOT** include our Python scripts for recording, but they can be found  in the following link: https://www.cl.cam.ac.uk/research/security/datasets/ascon/src_recording/CW_ASCON_recording_20240414.zip  
+When we recorded our traces for experiments, we categorized the traces into five different groups: _Reference, Detection, Profiling (Training), Validation, and Attack (Testing)_. In this repository, we **DO NOT** include our Python scripts for recording, but they can be found  in the following link:
 
+    https://www.cl.cam.ac.uk/research/security/datasets/ascon/src_recording/CW_ASCON_recording_20240414.zip
 
-on our [university webpage](https://www.cl.cam.ac.uk/research/security/datasets/ascon/) for any interest in recording with the same National Instruments platform.  
+Please check our [university webpage](https://www.cl.cam.ac.uk/research/security/datasets/ascon/index.html#U-Os-recording) for any interest in recording with the same National Instruments platform.  
 
 When we recorded our traces for experiments, we categorized the traces into the following five groups in separate subdirectories:  
  -  **0001\_reference:** to find a reference trace for recording quality checking.
