@@ -5,7 +5,7 @@ We recorded 16000 traces to select the points of interest (PoI) for template pro
    The folder "inter_gen/" contains the pre-generated I/O data interacting with the device (including the keys, nonces, plaintexts, and the corresponding ciphers and tags) for trace recording. To prevent overwriting the data we had used, we moved the Python code into another folder "inter_gen_code/".  
 
 2.  Download the raw traces:
-    Please download the raw traces with the following commands:  
+    The 16000 raw traces are stored in 100 ZIP files. Please download the raw traces with the following commands:  
     `cd Raw/`  
     `./script_all.sh`  
     Alternatively, please visit our university webpage to manually download the files:
