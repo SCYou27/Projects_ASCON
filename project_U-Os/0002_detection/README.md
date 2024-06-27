@@ -31,37 +31,6 @@ We recorded 16000 traces to select the points of interest (PoI) for template pro
 
 
 <!--
-<p>With the pre-generated I/O data, we then calculated all the target intermediate values and cut them into bytes with the following code:</p>
-
-<ul>
-<li><a href="U-Os/0002_detection/find_intermediates.zip">find_intermediates.zip (updated 2024-05-02)</a>,<br>
-resulting in <a href="U-Os/0002_detection/find_intermediates/intermediate_values.zip">find_intermediates/intermediate_values.zip (H/L version, updated 2024-05-02)</a>
-</li>
-</ul>
-
-<p>As we mentioned in our paper, the bit-interleaving (slicing) technique is applied in our target implementations. Therefore, we also calculated the bit-interleaved intermediate values:</p>
-
-<ul>
-<li><a href="U-Os/0002_detection/find_intermediates_sliced.zip">find_intermediates_sliced.zip (updated 2024-05-02)</a>,<br>
-resulting in <a href="U-Os/0002_detection/find_intermediates_sliced/intermediate_values.zip">find_intermediates_sliced/intermediate_values.zip (E/O version, updated 2024-05-02)</a>
-</li>
-</ul>
-
-
-<p>The raw traces were recorded and stored in 100 ZIP files in the following directory:</p>
-
-<ul>
-<li><a href="U-Os/index.html#DN">Raw traces for the detection set</a>
-</li>
-</ul>
-
-<p>We used the code in the following ZIP file to check the quality of the recorded traces by comparing them with the reference trace (ref_trace.npy):</p>
-
-<ul>
-<li><a href="U-Os/0002_detection/preproc_DN.zip">preproc_DN.zip (updated 2024-05-01)</a>
-</li>
-</ul>
-
 <p>Later, the code in the following ZIP file was for calculating the sample for detection in each clock cycle: </p>
 
 <ul>
