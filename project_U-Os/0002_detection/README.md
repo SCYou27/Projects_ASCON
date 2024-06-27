@@ -17,21 +17,23 @@ We recorded 16000 traces to select the points of interest (PoI) for template pro
    This will check the quality of the recorded traces against the reference trace ("0001\_reference/preproc/ref\_trace.npy") as well as whether the recorded responses from the CW-Lite board are equal to our pre-calculated ciphers and tags.
 
 4. **Calculate our target intermediate values:**  
-   With the pre-generated I/O data, we calculated all the target intermediate values and cut them into bytes. As we mentioned in our paper, the bit-interleaving (slicing) technique is applied in our target implementations. This means that a 64-bit lane of our target intermediate values will be stored in two 32-bit registers, either separated into high/low (H/L) bits or even/odd (E/O) bits.
+   With the pre-generated I/O data, we calculated all the target intermediate values. As we mentioned in our paper, the bit-interleaving (slicing) technique is applied in our target implementations. This means that a 64-bit lane of our tabinary rget intermediate values will be stored in two 32-bit registers, either separated into high/low (H/L) bits or even/odd (E/O) bits.
 
-   We first calculated the target intermediate values in 32-bit H/L words (cut into bytes):  
+   We first calculated the target intermediate values in 32-bit H/L words:  
    `cd find_intermediates/`  
    `./script_all.sh`  
+   Here each 32-bit value will be cut into four bytes, and then further converted to eight binary variables representing each byte, as we will later apply a multiple linear regression on our samples against these binary variables. 
 
-   Then we coverted the H/L data into the E/O data:  
+   Then we also converted the binary H/L data into the E/O data:  
    `cd find_intermediates_sliced/`  
    `./script_all.sh`  
    
-5. **Find samples for interesting clock cycle detection:**  
+6. **Find samples for interesting clock cycle detection:**  
    We used one sample per clock cycle to determine whether a clock cycle is interesting. We calculated the summation of 50 points around the peak of a clock cycle as such a sample for detection:  
    `cd get_samples/`  
    `./script_all.sh`   
 
+7. ****
 ***This page is still unfinished!***
 
 
