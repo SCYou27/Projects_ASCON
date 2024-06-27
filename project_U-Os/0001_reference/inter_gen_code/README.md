@@ -9,5 +9,8 @@
 3. pack up the data:  
    `./pack.sh`  
 
-4. clean the generated data to restart:  
+4. all-in-one script:  
+   `./script_all.sh`  
+   
+5. clean the generated data to restart:  
    `./clean.sh`   
