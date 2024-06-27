@@ -2,15 +2,24 @@
 We recorded 16000 traces to select the points of interest (PoI) for template profiling. This is to determine whether a time sample is related to our target intermediate values. In this attack, we determined whether a _clock cycle_ is interesting instead of individual samples. The tasks in this phase are as follows.  
 
 1. Generate I/O date:  
-   The folder "inter_gen/" contains the pre-generated I/O data interacting with the device (including the keys, nonces, plaintexts, and the corresponding ciphers and tags) for trace recording. To prevent overwriting the data we had used, we moved the Python code into another folder "inter_gen_code/".  
+   The folder "inter\_gen/" contains the pre-generated I/O data interacting with the device (including the keys, nonces, plaintexts, and the corresponding ciphers and tags) for trace recording. To prevent overwriting the data we had used, we moved the Python code into another folder "inter\_gen\_code/".  
 
-2.  Download the raw traces:
-    The 16000 raw traces are stored in 100 ZIP files. Please download the raw traces with the following commands:  
-    `cd Raw/`  
-    `./script_all.sh`  
-    Alternatively, please visit our university webpage to manually download the files:
-    https://www.cl.cam.ac.uk/research/security/datasets/ascon/U-Os/index.html#DN
+2. Download the raw traces:  
+   The 16000 raw traces are stored in 100 ZIP files. Please download the raw traces with the following commands:  
+   `cd Raw/`  
+   `./script\_all.sh`  
+   Alternatively, please visit our university webpage to manually download the files:  
+   https://www.cl.cam.ac.uk/research/security/datasets/ascon/U-Os/index.html#DN  
 
+3. Check the raw traces and their corresponding AEAD outputs (ciphers and tags):  
+   `cd preproc/`  
+   `./script\_all.sh`  
+   This will check the quality of the recorded traces against the reference trace ("0001\_reference/preproc/ref\_trace.npy") as well as whether the recorded responses from the CW-Lite board are equal to our pre-calculated ciphers and tags.
+
+***This page is still unfinished!***
+
+
+<!--
 <p>With the pre-generated I/O data, we then calculated all the target intermediate values and cut them into bytes with the following code:</p>
 
 <ul>
@@ -90,3 +99,4 @@ resulting in <a href="U-Os/0002_detection/find_intermediates_sliced/intermediate
 <li><a href="U-Os/0002_detection/ICS_extract/ics_union_004.zip">ICS_extract/ics_union_004.zip (updated 2024-05-03)</a>.
 </li>
 </ul>
+-->
