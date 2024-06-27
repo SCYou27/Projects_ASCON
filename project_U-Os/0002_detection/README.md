@@ -27,24 +27,15 @@ We recorded 16000 traces to select the points of interest (PoI) for template pro
    `cd find_intermediates_sliced/`  
    `./script_all.sh`  
    
+5. **Find samples for interesting clock cycle detection:**
+   We used one sample per clock cycle to determine whether a clock cycle is interesting. We calculated the summation of 50 points around the peak of a clock cycle as such a sample for detection:
+   `cd get_samples/`
+   `./script_all.sh`  
+
 ***This page is still unfinished!***
 
 
 <!--
-<p>Later, the code in the following ZIP file was for calculating the sample for detection in each clock cycle: </p>
-
-<ul>
-<li><a href="U-Os/0002_detection/get_samples.zip">get_samples.zip (updated 2024-05-02)</a>,
-</li>
-</ul>
-
-<p>resulting in: </p>
-
-<ul>
-<li><a href="U-Os/0002_detection/get_samples/Detect_Samples.hdf5">get_samples/Detect_Samples.hdf5 (updated 2024-05-02)</a>.
-</li>
-</ul>
-
 <p>With the above proprocessed data, we then used the code in the following ZIP files to calculate the \(R^2\) values for each intermediate bytes:</p>
 
 <ul>
