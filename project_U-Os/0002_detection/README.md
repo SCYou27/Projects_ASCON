@@ -28,9 +28,9 @@ We recorded 16000 traces to select the points of interest (PoI) for template pro
    `./script_all.sh`  
    
 5. **Find samples for interesting clock cycle detection:**
-   We used one sample per clock cycle to determine whether a clock cycle is interesting. We calculated the summation of 50 points around the peak of a clock cycle as such a sample for detection:
-   `cd get_samples/`
-   `./script_all.sh`  
+   We used one sample per clock cycle to determine whether a clock cycle is interesting. We calculated the summation of 50 points around the peak of a clock cycle as such a sample for detection:  
+   `cd get_samples/`  
+   `./script_all.sh`   
 
 ***This page is still unfinished!***
 
