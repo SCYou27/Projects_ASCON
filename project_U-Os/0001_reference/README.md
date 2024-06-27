@@ -12,7 +12,7 @@ We recorded 1600 traces and took their arithmetic mean vector as a reference tra
     Alternatively, please visit our university webpage to manually download the files:
     https://www.cl.cam.ac.uk/research/security/datasets/ascon/U-Os/index.html#RE
 
-4.  Process the raw traces and find the reference trace:  
+3.  Process the raw traces and find the reference trace:  
     `cd preproc/`  
     `./script_all.sh`  
     This will generate the reference trace "preproc/ref_trace.npy" for trace quality validation in the later phases.
