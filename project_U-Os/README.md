@@ -4,7 +4,7 @@ When we recorded our traces for experiments, we categorized the traces into five
 
 When we recorded our traces for experiments, we categorized the traces into the following five groups in separate subdirectories:  
  -  **0001\_reference:** to find a reference trace for recording quality checking.
- -  **0002\_detection:** to determine points of interest. 
+ -  **0002\_detection:** to determine points of interest (PoI). 
  -  **0003\_training:** to build our templates.
  -  **0004\_validation:** to validate our templates.
  -  **0005\_attack:** to recover keys used in ASCON AEAD with our attack scenario.
