@@ -49,7 +49,8 @@ We recorded 16000 traces to select the points of interest (PoI) for template pro
    
    The results will be stored in "detection_O/detect_results_08.zip", and this will also calculate the summed _R_<sup>2</sup> of those from the four member bytes to represent the value for a target 32-bit intermediate word, stored in "detection_O/detect_results_32.zip".  
    
-   Similarly, we will also calculate the values for the intermediate bytes in E/O order:  
+   Similarly, we will also calculate the values for the intermediate bytes in E/O order:
+   
    `cd detection_S/`  
    `./script_all.sh`
    
@@ -57,26 +58,6 @@ We recorded 16000 traces to select the points of interest (PoI) for template pro
 
 
 <!--
-<p>With the above proprocessed data, we then used the code in the following ZIP files to calculate the \(R^2\) values for each intermediate bytes:</p>
-
-<ul>
-<li><a href="U-Os/0002_detection/detection_O.zip">detection_O.zip (updated 2024-05-11) for H/L words</a>,</li>
-<li><a href="U-Os/0002_detection/detection_S.zip">detection_S.zip (updated 2024-05-11) for E/O words</a>,</li>
-</ul>
-
-<p>resulting in: </p>
-
-<ul>
-<li><a href="U-Os/0002_detection/detection_O/detect_results_08.zip">detection_O/detect_results_08.zip (updated 2024-05-11)</a>,</li>
-<li><a href="U-Os/0002_detection/detection_S/detect_results_08.zip">detection_S/detect_results_08.zip (updated 2024-05-11)</a>,</li>
-</ul>
-
-<p>as well as the \(\sum R^2\) for 32-bit words:</p>
-
-<ul>
-<li><a href="U-Os/0002_detection/detection_O/detect_results_32.zip">detection_O/detect_results_32.zip (updated 2024-05-11)</a>,</li>
-<li><a href="U-Os/0002_detection/detection_S/detect_results_32.zip">detection_S/detect_results_32.zip (updated 2024-05-11)</a>.</li>
-</ul>
 
 <p>With the \(\sum R^2\) for 32-bit words, we then used the code in the following ZIP to extract the union set of interesting clock cycles for each lane of our target intermediate states:</p>
 
