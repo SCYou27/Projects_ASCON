@@ -33,7 +33,11 @@ We recorded 16000 traces to select the points of interest (PoI) for template pro
    `cd get_samples/`  
    `./script_all.sh`   
 
-7. ****
+7. **Find the coefficient of determination (_R_<sup>2</sup>) of each intermediate byte**
+   We then applied multiple linear regression on the processed samples against the values of the intermediate binary variables to calculate the coefficient of determination (_R_<sup>2</sup>) between each sample and each target intermediate bytes (H/L ordered):  
+   `cd detection_O/`  
+   `./script_all.sh`  
+   The results will be stored in "detection_O/detect_results_08.zip", and this will also calculate the summed _R_<sup>2</sup> of those from the four member bytes to represent the value for a target 32-bit intermediate word, stored in "detection_O/detect_results_32.zip".  
 ***This page is still unfinished!***
 
 
