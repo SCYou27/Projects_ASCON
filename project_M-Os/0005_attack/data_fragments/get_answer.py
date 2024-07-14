@@ -39,14 +39,14 @@ def Slice(combined_str):
 
 def get_answers(t):
   print('===============================================================')
-  key_name = 'key_set_'+str(t).zfill(4)+'.npy'
+  key_name = str(t).zfill(4)+'.npy'
   print(key_name)
-  key_string_O = str(np.load('data_key/'+key_name))
+  key_string_O = str(np.load('data_key/key_set_'+key_name))
   key_string_S = Slice(key_string_O)
   key_bytes_O = key_str2bytes(key_string_O)
   key_bytes_S = key_str2bytes(key_string_S)
-  np.save(('key_bytes_O/'+key_name), key_bytes_O)
-  np.save(('key_bytes_S/'+key_name), key_bytes_S)
+  np.save(('key_bytes_O/key_'+key_name), key_bytes_O)
+  np.save(('key_bytes_S/key_'+key_name), key_bytes_S)
   print(key_bytes_O)
   print(key_bytes_S)
   return
