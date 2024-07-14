@@ -47,12 +47,20 @@ We recorded 16000 traces to select the points of interest (PoI) for template pro
    `cd detection_O/`  
    `./script_all.sh`  
    
-   The results will be stored in "detection_O/detect_results_08.zip", and this will also calculate the summed _R_<sup>2</sup> of those from the four member bytes to represent the value for a target 32-bit intermediate word, stored in "detection_O/detect_results_32.zip".  
+   The results will be stored in "detection\_O/detect\_results\_08.zip", and this will also calculate the summed _R_<sup>2</sup> of those from the four member bytes to represent the value for a target 32-bit intermediate word, stored in "detection\_O/detect\_results\_32.zip".  
    
    Similarly, we will also calculate the values for the intermediate bytes in E/O order:
    
    `cd detection_S/`  
-   `./script_all.sh`
+   `./script_all.sh`  
+
+7. **Determine the interesting clock cycles**
+   With the _R_<sup>2</sup> for each target 32-bit words, we then determine the interesting clock cycle with a given threshold:  
+
+   `cd ICS_extract/`  
+   `./script_all.sh`  
+
+   We used the union set of interesting clock cycles determined with the high, low, even, and odd 32-bit words in a 64-bit lane as the interesting clock cycle set for the eight member bytes in such a lane.
    
 ***This page is still unfinished!***
 
