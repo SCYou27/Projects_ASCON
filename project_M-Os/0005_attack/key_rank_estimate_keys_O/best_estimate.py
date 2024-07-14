@@ -16,7 +16,7 @@ class Evaluation:
     return
   
   def calculate(self, Tr):
-    tail = '_set_'+str(Tr).zfill(4)+'.npy'
+    tail = '_'+str(Tr).zfill(4)+'.npy'
     ANS_frags = svm.Load('key_bytes_O/key'+tail)
     for L in Target_Numbers:
       print('  ++++++++++++++++++++++++++++++++++++++++++++')
