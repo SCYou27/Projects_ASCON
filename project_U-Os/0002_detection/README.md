@@ -21,7 +21,7 @@ We recorded 16000 traces to select the points of interest (PoI) for template pro
    This will check the quality of the recorded traces against the reference trace ("0001\_reference/preproc/ref\_trace.npy") as well as whether the recorded responses from the CW-Lite board are equal to our pre-calculated ciphers and tags.
 
 4. **Calculate our target intermediate values:**  
-   With the pre-generated I/O data, we calculated all the target intermediate values. As we mentioned in our paper, the bit-interleaving (slicing) technique is applied in our target implementations. This means that a 64-bit lane of our tabinary rget intermediate values will be stored in two 32-bit registers, either separated into high/low (H/L) bits or even/odd (E/O) bits.
+   With the pre-generated I/O data, we calculated all the target intermediate values. As we mentioned in our paper, the bit-interleaving (slicing) technique is applied in our target implementations. This means that a 64-bit lane of our binary target intermediate values will be stored in two 32-bit registers, either divided into high/low (H/L) bits or even/odd (E/O) bits.
 
    We first calculated the target intermediate values in 32-bit H/L words:
    
@@ -54,13 +54,13 @@ We recorded 16000 traces to select the points of interest (PoI) for template pro
    `cd detection_S/`  
    `./script_all.sh`  
 
-7. **Determine the interesting clock cycles**
-   With the _R_<sup>2</sup> for each target 32-bit words, we then determine the interesting clock cycle with a given threshold:  
+7. **Determine the interesting clock cycles**  
+   With the _R_<sup>2</sup> for each target 32-bit word, we then determine the interesting clock cycle with a given threshold:  
 
    `cd ICS_extract/`  
    `./script_all.sh`  
 
-   We used the union set of interesting clock cycles determined with the high, low, even, and odd 32-bit words in a 64-bit lane as the interesting clock cycle set for the eight member bytes in such a lane.
+   We used the union set of interesting clock cycles determined with the high, low, even, and odd 32-bit words in a 64-bit lane as the interesting clock cycle set for the eight bytes in such a lane.
    
 ***This page is still unfinished!***
 
@@ -74,7 +74,7 @@ We recorded 16000 traces to select the points of interest (PoI) for template pro
 </li>
 </ul>
 
-<p>After the extraction with different threshold, we chose the union set of the interesting clock cycle with \(\sum R^2 > 0.004\) for all the later experiments:</p>
+<p>After the extraction with different thresholds, we chose the union set of the interesting clock cycle with \(\sum R^2 > 0.004\) for all the later experiments:</p>
 
 <ul>
 <li><a href="U-Os/0002_detection/ICS_extract/ics_union_004.zip">ICS_extract/ics_union_004.zip (updated 2024-05-03)</a>.
