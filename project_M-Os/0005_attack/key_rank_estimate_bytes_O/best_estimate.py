@@ -9,6 +9,8 @@ import math
 
 iteration_time = 2**20
 Target_Numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 50, 100]
+BIN_NUM = 60000
+ROUND_DIGIT = 5
 
 class Evaluation:
   def __init__(self):
@@ -24,7 +26,8 @@ class Evaluation:
       print('  Table loading...')
       BP_table = svm.Load('Tables/L'+str(L).zfill(4)+'/table_'+str(Tr).zfill(4)+'.npy')
       print('  Rank estimating...')
-      L_B, U_B, log_L, log_U = GE.Estimate_GE(ANS_frags, BP_table, 0.05)
+      Step = round((np.max(BP_table[:,:,1])-np.min(BP_table[:,:,1]))/BIN_NUM, ROUND_DIGIT)
+      L_B, U_B, log_L, log_U = GE.Estimate_GE(ANS_frags, BP_table, Step)
       print('  lower bound:', L_B, '(2^'+str(log_L)+')')
       print('  upper bound:', U_B, '(2^'+str(log_U)+')')
       Best = (log_L+log_U)/2
