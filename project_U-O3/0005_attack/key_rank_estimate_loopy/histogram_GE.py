@@ -42,7 +42,7 @@ def Estimate_GE(ANSWERs, Tables, bin_size):
   if Correct_bin<=PLUS:
     lower = 1
   else:
-    lower = np.sum(Final_Histograms[:(Correct_bin-PLUS)])
-  upper = np.sum(Final_Histograms[:Trunc_Size])
+    lower = round(np.sum(Final_Histograms[:(Correct_bin-PLUS)]))
+  upper = round(np.sum(Final_Histograms[:Trunc_Size]))
   return lower, upper, math.log2(lower), math.log2(upper)
 
