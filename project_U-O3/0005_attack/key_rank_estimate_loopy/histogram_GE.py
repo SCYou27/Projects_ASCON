@@ -9,10 +9,15 @@ BIN_MIN = 0.00001
 
 def table2bins(Table, bin_size, Trunc_Size):
   table_size = len(Table)
-  NegLogPs = -np.around(Table[:,1]/bin_size)
-  Freqs = []
-  for T in range(0, Trunc_Size):
-    Freqs.append(np.count_nonzero(NegLogPs==T))
+  NegLogPs = np.array(-np.around(Table[:,1]/bin_size), np.int32)
+  Freqs = [0]*Trunc_Size
+  if Trunc_Size<table_size:
+    for T in range(0, Trunc_Size):
+      Freqs[T] = np.count_nonzero(NegLogPs==T)
+  else:
+    for C in range(0, table_size):
+      if NegLogPs[C]<Trunc_Size:
+        Freqs[NegLogPs[C]] += 1
   return np.array(Freqs, dtype=np.uint64)
 
 def conv_recursive(Histograms, Trunc_Size):
