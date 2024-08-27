@@ -2,6 +2,7 @@ import numpy as np
 import time
 import sys
 import math
+import scipy.signal as ss
 
 PLUS = 16
 BIN_MIN = 0.00001
@@ -21,7 +22,7 @@ def conv_recursive(Histograms, Trunc_Size):
     Mid = len(Histograms)//2
     first  = conv_recursive(Histograms[:Mid], Trunc_Size)
     second = conv_recursive(Histograms[Mid:], Trunc_Size)
-    return np.convolve(first, second)[:Trunc_Size]
+    return ss.fftconvolve(first, second)[:Trunc_Size]
 
 def Estimate_GE(ANSWERs, Tables, bin_size):
   bin_size = max(bin_size, BIN_MIN)
@@ -37,7 +38,7 @@ def Estimate_GE(ANSWERs, Tables, bin_size):
   print('  Correct answer lies in bin #'+str(Correct_bin))
   first  = np.array(conv_recursive(Bin_init[:Mid], Trunc_Size), dtype='object')
   second = np.array(conv_recursive(Bin_init[Mid:], Trunc_Size), dtype='object')
-  Final_Histograms = np.convolve(first, second)
+  Final_Histograms = ss.fftconvolve(first, second)
   if Correct_bin<=PLUS:
     lower = 1
   else:
