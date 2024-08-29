@@ -7,33 +7,49 @@ searchlimit = 2^24
 for run = parse.(Int, ARGS)
     if run == 1
         experiment = "U-Os";
-        frag = "bytes"
+        frag = "direct"
         traces = string.(1:10; pad=2)
     elseif run == 2
         experiment = "U-Os";
-        frag = "16bits"
+        frag = "bytes"
         traces = string.(1:10; pad=2)
     elseif run == 3
         experiment = "U-Os";
-        frag = "bits"
+        frag = "16bits"
         traces = string.(1:10; pad=2)
     elseif run == 4
-        experiment = "U-O3";
-        frag = "bytes"
+        experiment = "U-Os";
+        frag = "bits"
         traces = string.(1:10; pad=2)
     elseif run == 5
         experiment = "U-O3";
-        frag = "16bits"
+        frag = "direct"
         traces = string.(1:10; pad=2)
     elseif run == 6
         experiment = "U-O3";
-        frag = "bits"
+        frag = "bytes"
         traces = string.(1:10; pad=2)
     elseif run == 7
+        experiment = "U-O3";
+        frag = "16bits"
+        traces = string.(1:10; pad=2)
+    elseif run == 8
+        experiment = "U-O3";
+        frag = "bits"
+        traces = string.(1:10; pad=2)
+    elseif run == 9
+        experiment = "M-Os";
+        frag = "direct_O"
+        traces = string.([1:10; 20; 50; 100]; pad=4)
+    elseif run == 10
         experiment = "M-Os";
         frag = "bytes_O"
         traces = string.([1:10; 20; 50; 100]; pad=4)
-    elseif run == 8
+    elseif run == 11
+        experiment = "M-Os";
+        frag = "direct_S"
+        traces = string.([1:10; 20; 50; 100]; pad=4)
+    elseif run == 12
         experiment = "M-Os";
         frag = "bytes_S"
         traces = string.([1:10; 20; 50; 100]; pad=4)
@@ -50,6 +66,12 @@ for run = parse.(Int, ARGS)
     elseif frag == "bytes_O";
         F = UInt8
     elseif frag == "bytes_S";
+        F = UInt8
+    elseif frag == "direct";
+        F = UInt8
+    elseif frag == "direct_O";
+        F = UInt8
+    elseif frag == "direct_S";
         F = UInt8
     else
         @error "what?"

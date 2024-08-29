@@ -28,3 +28,8 @@ mv Tables/ ${DIR}Tables_16bits/
 unzip ${DATA_DIR}data_fragments/key_16bits.zip
 mv key_16bits/ ${DIR}Key_16bits/
 #
+# direct
+unzip ${DATA_DIR}template_attack_keys_O_TABLES/Tables.zip
+mv Tables/ ${DIR}Tables_direct/
+cp -r ${DIR}Key_bytes/ ${DIR}Key_direct/
+#
