@@ -43,7 +43,7 @@ We recorded 64000 traces (stored in 400 ZIP files) for template profiling.
 5. **Downsample the raw traces**  
    With the following command lines, we downsample the raw traces from 500 to 10 points per clock cycle (PPC) by summing up the values from every 50 consecutive samples to form the new traces:
 
-   `cd Resample_HDF5/`
+   `cd Resample_HDF5/`  
    `./script_all.sh`  
 
 ***This file is not yet finished!***
