@@ -40,4 +40,10 @@ We separated our attack Python code into three sub-projects by their target ASCO
  -  **U-O3 experiments:** in `project_U-O3/`
  -  **M-Os experiments:** in `project_M-Os/`
 
-Meanwhile, we provided an additional Julia implementation of key enumeration and rank estimation in `key_rank_jl/`
+Meanwhile, we provided an additional Julia implementation of key enumeration and rank estimation in `key_rank_jl/`  
+
+For each sub-task in our experiments, we provide three shell scripts as follows:  
+
+ -  `script_all.sh`:
+ -  `download.sh`:
+ -  `clean.sh`:
