@@ -60,24 +60,4 @@ We recorded 16000 traces to select the points of interest (PoI) for template pro
    `cd ICS_extract/`  
    `./script_all.sh`  
 
-   We used the union set of interesting clock cycles determined with the high, low, even, and odd 32-bit words in a 64-bit lane as the interesting clock cycle set for the eight bytes in such a lane.
-   
-***This page is still unfinished!***
-
-
-<!--
-
-<p>With the \(\sum R^2\) for 32-bit words, we then used the code in the following ZIP to extract the union set of interesting clock cycles for each lane of our target intermediate states:</p>
-
-<ul>
-<li><a href="U-Os/0002_detection/ICS_extract.zip">ICS_extract.zip (updated 2024-05-03)</a>.
-</li>
-</ul>
-
-<p>After the extraction with different thresholds, we chose the union set of the interesting clock cycle with \(\sum R^2 > 0.004\) for all the later experiments:</p>
-
-<ul>
-<li><a href="U-Os/0002_detection/ICS_extract/ics_union_004.zip">ICS_extract/ics_union_004.zip (updated 2024-05-03)</a>.
-</li>
-</ul>
--->
+   We used the union set of interesting clock cycles determined with the high, low, even, and odd 32-bit words in a 64-bit lane as the interesting clock cycle set for the eight bytes in such a lane. After the extraction with different thresholds, we chose the union set of the interesting clock cycle with _R_<sup>2</sup> > 0.004 (`ics_union_004.zip`) for all the later experiments.
