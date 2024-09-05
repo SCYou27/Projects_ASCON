@@ -44,6 +44,6 @@ Meanwhile, we provided an additional Julia implementation of key enumeration and
 
 For each sub-task in our experiments, we provide three shell scripts as follows:  
 
- -  `script_all.sh`: all-in-one script to finish the task.
+ -  `script_all.sh`: an all-in-one script to finish the task in the sub-directory.
  -  `download.sh`: directly download the results from our server.
  -  `clean.sh`: delete all the results and intermediate files (for restart).
