@@ -15,4 +15,4 @@ We recorded 1600 traces and took their arithmetic mean vector as a reference tra
 3. **Process the raw traces and find the reference trace:**  
    `cd preproc/`  
    `./script_all.sh`  
-   This will generate the reference trace "preproc/ref\_trace.npy" for trace quality validation in the later phases.  
+   This will generate the reference trace `preproc/ref_trace.npy` for trace quality validation in the later phases.  
