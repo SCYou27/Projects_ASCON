@@ -36,8 +36,8 @@ With the parameters and software version that we stated in our paper, we also in
 
 We separated our attack Python code into three sub-projects by their target ASCON AEAD implementations:
 
- -  **U-Os experiments:** in `Project_U-Os/`
- -  **U-O3 experiments:** in `Project_U-O3/`
- -  **M-Os experiments:** in `Project_M-Os/`
+ -  **U-Os experiments:** in `project_U-Os/`
+ -  **U-O3 experiments:** in `project_U-O3/`
+ -  **M-Os experiments:** in `project_M-Os/`
 
 Meanwhile, we provided an additional Julia implementation of key enumeration and rank estimation in `key_rank_jl/`
