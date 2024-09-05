@@ -28,7 +28,7 @@ We recorded 16000 traces to select the points of interest (PoI) for template pro
    `cd find_intermediates/`  
    `./script_all.sh`
    
-   Here each 32-bit value will be cut into four bytes, and then further converted to eight binary variables representing each byte, as we will later apply a multiple linear regression on our samples against these binary variables. 
+   Here each 32-bit value will be cut into four bytes, and then converted to eight binary variables representing each byte, as we will later apply a multiple linear regression on our samples against these binary variables. 
 
    Then we also converted the binary H/L data into the E/O data:
    
@@ -47,7 +47,7 @@ We recorded 16000 traces to select the points of interest (PoI) for template pro
    `cd detection_O/`  
    `./script_all.sh`  
    
-   The results will be stored in "detection\_O/detect\_results\_08.zip", and this will also calculate the summed _R_<sup>2</sup> of those from the four member bytes to represent the value for a target 32-bit intermediate word, stored in "detection\_O/detect\_results\_32.zip".  
+   The results will be stored in `detection_O/detect_results_08.zip`, and this will also calculate the summed _R_<sup>2</sup> of those from the four member bytes to represent the value for a target 32-bit intermediate word, stored in `detection_O/detect_results_32.zip`.  
    
    Similarly, we will also calculate the values for the intermediate bytes in E/O order:
    
