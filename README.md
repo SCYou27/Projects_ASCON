@@ -13,7 +13,7 @@ More details of the attack are described in the following paper and thesis:
 
  -  Shih-Chun You:  
     _Single-trace template attacks on permutation-based cryptography_,  
-    Apollo - University of Cambridge Repository,
+    Apollo - University of Cambridge Repository,  
     Supervised by Dr Markus G. Kuhn,  
     PhD thesis, 2022, DOI: https://doi.org/10.17863/CAM.100592  
 
