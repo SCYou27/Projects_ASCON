@@ -46,30 +46,16 @@ We recorded 64000 traces (stored in 400 ZIP files) for template profiling.
    `cd Resample_HDF5/`  
    `./script_all.sh`  
 
+6. **Profile templates for byte fragments (H/L)**  
+
+7. **Profile templates for byte fragments (E/O)**  
+
+8. **Profile templates for 16-bit fragments (H/L)**  
+
 ***This file is not yet finished!***
 
 <!--
 <h3 id=U-Os-training>Profiling (Training) traces</h3>
-
-
-<p>Later, we used the following code to downsample our raw traces:</p>
-
-<ul>
-<li><a href="U-Os/0003_training/Resample_HDF5.zip">Resample_HDF5.zip (updated 2024-05-03)</a>,</li>
-</ul>
-
-<p>resulting in 8 HDF5 files:</p>
-
-<ul>
-<li><a href="U-Os/0003_training/Resample_HDF5/part_00.hdf5">Resample_HDF5/part_00.hdf5 (updated 2024-05-03)</a>,</li>
-<li><a href="U-Os/0003_training/Resample_HDF5/part_01.hdf5">Resample_HDF5/part_01.hdf5 (updated 2024-05-03)</a>,</li>
-<li><a href="U-Os/0003_training/Resample_HDF5/part_02.hdf5">Resample_HDF5/part_02.hdf5 (updated 2024-05-03)</a>,</li>
-<li><a href="U-Os/0003_training/Resample_HDF5/part_03.hdf5">Resample_HDF5/part_03.hdf5 (updated 2024-05-03)</a>,</li>
-<li><a href="U-Os/0003_training/Resample_HDF5/part_04.hdf5">Resample_HDF5/part_04.hdf5 (updated 2024-05-03)</a>,</li>
-<li><a href="U-Os/0003_training/Resample_HDF5/part_05.hdf5">Resample_HDF5/part_05.hdf5 (updated 2024-05-03)</a>,</li>
-<li><a href="U-Os/0003_training/Resample_HDF5/part_06.hdf5">Resample_HDF5/part_06.hdf5 (updated 2024-05-03)</a>,</li>
-<li><a href="U-Os/0003_training/Resample_HDF5/part_07.hdf5">Resample_HDF5/part_07.hdf5 (updated 2024-05-03)</a>.</li>
-</ul>
 
 <p>After all the preprocessing steps above, we profiled our templates with the following code:</p>
 
