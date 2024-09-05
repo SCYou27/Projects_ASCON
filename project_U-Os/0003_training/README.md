@@ -28,9 +28,9 @@ We recorded 64000 traces (stored in 400 ZIP files) for template profiling.
    `cd find_intermediates/`  
    `./script_all.sh`  
    
-   Here each 32-bit value will be cut into four bytes, and then further converted to eight binary variables representing each byte, as we will later apply a multiple linear regression on our samples against these binary variables. 
+   Here each 32-bit value will be cut into four bytes, and then converted to eight binary variables representing each byte, as we will later apply a multiple linear regression on our samples against these binary variables. 
 
-   Then we also converted the binary H/L data into the E/O data:
+   Then we bit-interleaved the binary H/L data into the E/O data:
    
    `cd find_intermediates_sliced/`  
    `./script_all.sh`  
@@ -41,7 +41,10 @@ We recorded 64000 traces (stored in 400 ZIP files) for template profiling.
    `./script_all.sh`  
 
 5. **Downsample the raw traces**  
-  
+   With the following command lines, we downsample the raw traces from 500 to 10 points per clock cycle (PPC) by summing up the values from every 50 consecutive samples to form the new traces:
+
+   `cd Resample_HDF5/`
+   `./script_all.sh`  
 
 ***This file is not yet finished!***
 
