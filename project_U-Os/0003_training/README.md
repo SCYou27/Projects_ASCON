@@ -10,7 +10,7 @@ We recorded 64000 traces (stored in 400 ZIP files) for template profiling.
    `cd Raw/`  
    `./script_all.sh`
    
-   Alternatively, please visit our university webpage to manually download the files:  
+   Alternatively, please visit our university webpage to download the files manually:  
    https://www.cl.cam.ac.uk/research/security/datasets/ascon/U-Os/index.html#TR  
 
 3. **Check the raw traces and their corresponding AEAD outputs (ciphers and tags):**
@@ -37,8 +37,8 @@ We recorded 64000 traces (stored in 400 ZIP files) for template profiling.
 
    In addition, we also calculated the target 16-bit intermediate values for profiling the 16-bit templates (H/L):  
 
-  `cd find_intermediates_16bit/`  
-  `./script_all.sh`  
+   `cd find_intermediates_16bit/`  
+   `./script_all.sh`  
 
 5. **Downsample the raw traces**  
   
