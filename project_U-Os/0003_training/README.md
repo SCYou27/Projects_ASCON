@@ -21,7 +21,7 @@ We recorded 64000 traces (stored in 400 ZIP files) for template profiling.
    This will check the quality of the recorded traces against the reference trace (`0001_reference/preproc/ref_trace.npy`) as well as whether the recorded responses from the CW-Lite board are equal to our pre-calculated ciphers and tags.
 
 4. **Calculate our target intermediate values:**  
-   With the pre-generated I/O data, we calculated all the target intermediate values. As we mentioned in our paper, the bit-interleaving (slicing) technique is applied in our target implementations. This means that a 64-bit lane of our binary target intermediate values will be stored in two 32-bit registers, either divided into high/low (H/L) bits or even/odd (E/O) bits.
+   With the pre-generated I/O data, we calculated all the target intermediate values. As we mentioned in our paper, the bit-interleaving (slicing) technique is applied in our target implementations. This means that a 64-bit lane of our binary target intermediate values will be stored in two 32-bit registers, divided into either high/low (H/L) bits or even/odd (E/O) bits.
 
    We first calculated the target intermediate values in 32-bit H/L words:
    
@@ -35,7 +35,7 @@ We recorded 64000 traces (stored in 400 ZIP files) for template profiling.
    `cd find_intermediates_sliced/`  
    `./script_all.sh`  
 
-  In addition, we also calculated the target 16-bit intermediate values for profiling the 16-bit templates (H/L):  
+   In addition, we also calculated the target 16-bit intermediate values for profiling the 16-bit templates (H/L):  
 
   `cd find_intermediates_16bit/`  
   `./script_all.sh`  
