@@ -33,7 +33,7 @@ With the parameters and software version that we stated in our paper, we also in
 
 ## Projects
 
-We separated our attacks into three sub-projects by their target ASCON AEAD implementations:
+We separated our attack Python code into three sub-projects by their target ASCON AEAD implementations:
 
  -  **U-Os experiments:** in `Project_U-Os/`
  -  **U-O3 experiments:** in `Project_U-O3/`
