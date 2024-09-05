@@ -25,11 +25,11 @@ The source code of the ASCON AEAD implementations on CW-Lite is available below.
 With the parameters and software version that we stated in our paper, we also include the following compiled HEX files for three different versions of ASCON-128 implementations in the above ZIP file:  
 
  -  **U-Os experiments,** an unmasked implementation with compiler optimization option "-Os":  
-    ascon_src/simpleserial-ascon-aead-128/simpleserial-aead-CWLITEARM.hex
- -  **U-O3 experiments,** an unmasked implementation with compiler optimization option "-O3":
-    ascon_src/simpleserial-ascon-aead-128-O3/simpleserial-aead-CWLITEARM.hex
+    `ascon_src/simpleserial-ascon-aead-128/simpleserial-aead-CWLITEARM.hex`
+ -  **U-O3 experiments,** an unmasked implementation with compiler optimization option "-O3":  
+    `ascon_src/simpleserial-ascon-aead-128-O3/simpleserial-aead-CWLITEARM.hex`
  -  **M-Os experiments,** a masked implementation with compiler optimization option "-Os":  
-    ascon_src/simpleserial-masked-ascon-aead-128/simpleserial-aead-CWLITEARM.hex
+    `ascon_src/simpleserial-masked-ascon-aead-128/simpleserial-aead-CWLITEARM.hex`
 
 ## Projects
 
