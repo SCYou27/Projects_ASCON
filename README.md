@@ -31,4 +31,11 @@ With the parameters and software version that we stated in our paper, we also in
  -  **M-Os experiments,** a masked implementation with compiler optimization option "-Os":  
     ascon_src/simpleserial-masked-ascon-aead-128/simpleserial-aead-CWLITEARM.hex
 
-***Work on the README files in these projects is still ongoing!***
+## Projects
+
+We separated our attacks into three sub-projects by their target ASCON AEAD implementations:
+
+ -  **U-Os experiments:** in `Project_U-Os/`
+ -  **U-O3 experiments:** in `Project_U-O3/`
+ -  **M-Os experiments:** in `Project_M-Os/`
+
