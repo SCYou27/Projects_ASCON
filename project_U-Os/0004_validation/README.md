@@ -39,14 +39,11 @@ We recorded 4000 traces (stored in 40 ZIP files) for template profiling.
    `./script_all.sh`  
 
 5. **Downsample the raw traces**  
-   With the following command lines, we downsample the raw traces from 500 to 10 points per clock cycle (PPC) by summing up the values from every 50 consecutive samples to form the new traces:
+   With the following command lines, we downsampled the raw traces from 500 to 10 points per clock cycle (PPC) by summing up the values from every 50 consecutive samples to form the new traces:
 
    `cd Resample_HDF5/`  
    `./script_all.sh`  
 
-***This page is still under revision***
-
-<!--
 6. **Validate our templates**  
    After all the preprocessing steps above, we validated our templates in the following subdirectories:
    
@@ -61,6 +58,7 @@ We recorded 4000 traces (stored in 40 ZIP files) for template profiling.
    *templates for 16-bit fragments (H/L)*:  
    `cd template_validation_16bits_O/`  
    `./script_all.sh`  
--->
+
+   In these validation procedures, we divided the traces into four groups equally: G0 for the first 1000 traces, G1 for the second ones, G2 for the third ones, and G3 for the last ones. The validation results from G0 were reported and published in our paper, whereas the others were for comparison.
 
 
