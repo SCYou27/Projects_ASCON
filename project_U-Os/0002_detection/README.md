@@ -1,4 +1,4 @@
-# Detection traces  
+# Detection for interesting clock cycles  
 We recorded 16000 traces to select the points of interest (PoI) for template profiling. This is to determine whether a time sample is related to our target intermediate values. In this attack, we determined whether a _clock cycle_ is interesting instead of individual samples. The tasks in this phase are as follows.  
 
 1. **Generate I/O data:**  
