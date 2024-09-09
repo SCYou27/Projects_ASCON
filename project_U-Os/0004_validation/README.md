@@ -1,4 +1,4 @@
-# Profiling (Training) traces  
+# Validation  
 We recorded 4000 traces (stored in 40 ZIP files) for template profiling.  
 
 1. **Generate I/O data:**  
