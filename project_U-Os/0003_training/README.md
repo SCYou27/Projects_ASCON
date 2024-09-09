@@ -47,7 +47,8 @@ We recorded 64000 traces (stored in 400 ZIP files) for template profiling.
    `./script_all.sh`  
 
 6. **Profile templates for byte fragments (H/L)**  
-   After all the preprocessing steps above, we profiled our templates in the following subdirectories:  
+   After all the preprocessing steps above, we profiled our templates in the following subdirectories:
+   
    *templates for byte fragments (H/L)*:  
    `cd template_profiling_bytes_O/`  
    `./script_all.sh`
@@ -60,26 +61,5 @@ We recorded 64000 traces (stored in 400 ZIP files) for template profiling.
    `cd template_profiling_16bits_O/`  
    `./script_all.sh`  
 
-***This file is not yet finished!***
 
-<!--
-<h3 id=U-Os-training>Profiling (Training) traces</h3>
-
-<p>After all the preprocessing steps above, we profiled our templates with the following code:</p>
-
-<ul>
-<li>8-bit templates with H/L bit order: <a href="U-Os/0003_training/template_profiling_bytes_O.zip">template_profiling_bytes_O.zip (updated 2024-05-04)</a>,</li>
-<li>8-bit templates with E/O bit order: <a href="U-Os/0003_training/template_profiling_bytes_S.zip">template_profiling_bytes_S.zip (updated 2024-05-04)</a>,</li>
-<li>selected 16-bit templates with H/L bit order: <a href="U-Os/0003_training/template_profiling_16bits_O.zip">template_profiling_16bits_O.zip (updated 2024-05-05)</a>,</li>
-</ul>
-
-<p>resulting in:</p>
-
-<ul>
-<li><a href="U-Os/0003_training/template_profiling_bytes_O/templateLDA_O004.zip">template_profiling_bytes_O/templateLDA_O004.zip (updated 2024-05-04)</a>,</li>
-<li><a href="U-Os/0003_training/template_profiling_bytes_S/templateLDA_O004.zip">template_profiling_bytes_S/templateLDA_O004.zip (updated 2024-05-04)</a>,</li>
-<li><a href="U-Os/0003_training/template_profiling_16bits_O/templateLDA_O004_16bit.zip">template_profiling_16bits_O/templateLDA_O004_16bit.zip (updated 2024-05-05)</a>,</li>
-</ul>
-
--->
 
