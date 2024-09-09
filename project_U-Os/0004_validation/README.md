@@ -1,17 +1,17 @@
 # Profiling (Training) traces  
-We recorded 64000 traces (stored in 400 ZIP files) for template profiling.  
+We recorded 4000 traces (stored in 40 ZIP files) for template profiling.  
 
 1. **Generate I/O data:**  
    The folder `inter_gen/` contains the pre-generated I/O data interacting with the device (including the keys, nonces, plaintexts, and the corresponding ciphers and tags) for trace recording. We moved the Python code into another folder `inter_gen_code/` to prevent overwriting the data we had used.  
 
 2. **Download the raw traces:**  
-   The 64000 raw traces are stored in 400 ZIP files. Please download the raw traces with the following commands:
+   The 4000 raw traces are stored in 40 ZIP files. Please download the raw traces with the following commands:
    
    `cd Raw/`  
    `./script_all.sh`
    
    Alternatively, please visit our university webpage to download the files manually:  
-   https://www.cl.cam.ac.uk/research/security/datasets/ascon/U-Os/index.html#TR  
+   https://www.cl.cam.ac.uk/research/security/datasets/ascon/U-Os/index.html#VA  
 
 3. **Check the raw traces and their corresponding AEAD outputs (ciphers and tags):**
    
@@ -20,6 +20,8 @@ We recorded 64000 traces (stored in 400 ZIP files) for template profiling.
    
    This will check the quality of the recorded traces against the reference trace (`0001_reference/preproc/ref_trace.npy`) as well as whether the recorded responses from the CW-Lite board are equal to our pre-calculated ciphers and tags.
 
+***This page is still under revision***
+ <!--
 4. **Calculate our target intermediate values:**  
    With the pre-generated I/O data, we calculated all the target intermediate values. As we mentioned in our paper, the bit-interleaving (slicing) technique is applied in our target implementations. This means that a 64-bit lane of our binary target intermediate values will be stored in two 32-bit registers, divided into either high/low (H/L) bits or even/odd (E/O) bits.
 
@@ -60,6 +62,6 @@ We recorded 64000 traces (stored in 400 ZIP files) for template profiling.
    *templates for 16-bit fragments (H/L)*:  
    `cd template_profiling_16bits_O/`  
    `./script_all.sh`  
-
+-->
 
 
