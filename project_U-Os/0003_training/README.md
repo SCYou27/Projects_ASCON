@@ -47,10 +47,18 @@ We recorded 64000 traces (stored in 400 ZIP files) for template profiling.
    `./script_all.sh`  
 
 6. **Profile templates for byte fragments (H/L)**  
-
-7. **Profile templates for byte fragments (E/O)**  
-
-8. **Profile templates for 16-bit fragments (H/L)**  
+   After all the preprocessing steps above, we profiled our templates in the following subdirectories:  
+   *templates for byte fragments (H/L)*:  
+   `cd template_profiling_bytes_O/`  
+   `./script_all.sh`
+   
+   *templates for byte fragments (E/O)*:  
+   `cd template_profiling_bytes_S/`  
+   `./script_all.sh`
+   
+   *templates for 16-bit fragments (H/L)*:  
+   `cd template_profiling_16bits_O/`  
+   `./script_all.sh`  
 
 ***This file is not yet finished!***
 
