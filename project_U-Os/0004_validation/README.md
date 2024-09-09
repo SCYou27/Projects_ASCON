@@ -20,8 +20,6 @@ We recorded 4000 traces (stored in 40 ZIP files) for template profiling.
    
    This will check the quality of the recorded traces against the reference trace (`0001_reference/preproc/ref_trace.npy`) as well as whether the recorded responses from the CW-Lite board are equal to our pre-calculated ciphers and tags.
 
-***This page is still under revision***
-
 4. **Calculate our target intermediate values:**  
    With the pre-generated I/O data, we calculated all the target intermediate values. Unlike the cases in the detection and profiling stages, we did not perform a multiple linear regression with the intermediate values recorded in this stage. We just used the values as reference answers for validation. Therefore, we stored the intermediate values as an 8-bit or 16-bit integer here instead of binary variables in the two previous stages.     
 
@@ -39,7 +37,10 @@ We recorded 4000 traces (stored in 40 ZIP files) for template profiling.
 
    `cd find_intermediates_16bit/`  
    `./script_all.sh`  
- <!--
+
+***This page is still under revision***
+
+<!--
 5. **Downsample the raw traces**  
    With the following command lines, we downsample the raw traces from 500 to 10 points per clock cycle (PPC) by summing up the values from every 50 consecutive samples to form the new traces:
 
