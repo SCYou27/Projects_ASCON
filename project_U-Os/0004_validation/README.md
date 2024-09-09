@@ -38,15 +38,15 @@ We recorded 4000 traces (stored in 40 ZIP files) for template profiling.
    `cd find_intermediates_16bit/`  
    `./script_all.sh`  
 
-***This page is still under revision***
-
-<!--
 5. **Downsample the raw traces**  
    With the following command lines, we downsample the raw traces from 500 to 10 points per clock cycle (PPC) by summing up the values from every 50 consecutive samples to form the new traces:
 
    `cd Resample_HDF5/`  
    `./script_all.sh`  
 
+***This page is still under revision***
+
+<!--
 6. **Profile templates for byte fragments (H/L)**  
    After all the preprocessing steps above, we profiled our templates in the following subdirectories:
    
