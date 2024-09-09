@@ -21,27 +21,25 @@ We recorded 4000 traces (stored in 40 ZIP files) for template profiling.
    This will check the quality of the recorded traces against the reference trace (`0001_reference/preproc/ref_trace.npy`) as well as whether the recorded responses from the CW-Lite board are equal to our pre-calculated ciphers and tags.
 
 ***This page is still under revision***
- <!--
-4. **Calculate our target intermediate values:**  
-   With the pre-generated I/O data, we calculated all the target intermediate values. As we mentioned in our paper, the bit-interleaving (slicing) technique is applied in our target implementations. This means that a 64-bit lane of our binary target intermediate values will be stored in two 32-bit registers, divided into either high/low (H/L) bits or even/odd (E/O) bits.
 
-   We first calculated the target intermediate values in 32-bit H/L words:
+4. **Calculate our target intermediate values:**  
+   With the pre-generated I/O data, we calculated all the target intermediate values. Unlike the cases in the detection and profiling stages, we did not perform a multiple linear regression with the intermediate values recorded in this stage. We just used the values as reference answers for validation. Therefore, we stored the intermediate values as an 8-bit or 16-bit integer here instead of binary variables in the two previous stages.     
+
+   We first calculated the target intermediate values in 32-bit H/L words (stored in bytes):
    
    `cd find_intermediates/`  
    `./script_all.sh`  
    
-   Here each 32-bit value will be cut into four bytes, and then converted to eight binary variables representing each byte, as we will later apply a multiple linear regression on our samples against these binary variables. 
-
-   Then we bit-interleaved the binary H/L data into the E/O data:
+   Then we bit-interleaved the H/L data into the E/O data:
    
    `cd find_intermediates_sliced/`  
    `./script_all.sh`  
 
-   In addition, we also calculated the target 16-bit intermediate values for profiling the 16-bit templates (H/L):  
+   In addition, we also calculated the target 16-bit intermediate values (H/L) by concatenating two consecutive bytes:  
 
    `cd find_intermediates_16bit/`  
    `./script_all.sh`  
-
+ <!--
 5. **Downsample the raw traces**  
    With the following command lines, we downsample the raw traces from 500 to 10 points per clock cycle (PPC) by summing up the values from every 50 consecutive samples to form the new traces:
 
