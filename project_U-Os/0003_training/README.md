@@ -46,7 +46,7 @@ We recorded 64000 traces (stored in 400 ZIP files) for template profiling.
    `cd Resample_HDF5/`  
    `./script_all.sh`  
 
-6. **Profile templates for byte fragments (H/L)**  
+6. **Profile templates**  
    After all the preprocessing steps above, we profiled our templates in the following subdirectories:
    
    *templates for byte fragments (H/L)*:  
