@@ -59,6 +59,6 @@ We recorded 4000 traces (stored in 40 ZIP files) for template profiling.
    `cd template_validation_16bits_O/`  
    `./script_all.sh`  
 
-   In these validation procedures, we divided the traces into four groups equally: G0 for the first 1000 traces, G1 for the second ones, G2 for the third ones, and G3 for the last ones. The validation results from G0 were reported and published in our paper, whereas the others were for comparison.
+   In these validation procedures, we divided the traces into four groups with equal size: G0 for the first 1000 traces, G1 for the second ones, G2 for the third ones, and G3 for the last ones. The validation results from G0 were reported and published in our paper, whereas the others were for comparison.
 
 
