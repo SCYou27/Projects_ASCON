@@ -67,8 +67,6 @@ We recorded 10000 traces (stored in 100 ZIP files) for testing our attack.
 
 <h3 id=U-Os-attack>Attack (Testing) traces</h3>
 
-<p>Note that in these 10000 encryptions for recording, we had each 10 share the same key. For example, the first traces in "Raw/Raw_TS_0000.zip", "Raw/Raw_TS_0010.zip", ..., "Raw/Raw_TS_0090.zip" were recorded from encryptions with the same key.</p>
-
 <p>In this attack stage, we do not need the intermediate values but need only the pre-generated I/O date for verifying the correctness of our recovered key by SASCA. Hoever, for the convenience of our attack, we still rearranged the pre-generated I/O data with the following code:</p>
 
 <ul>
