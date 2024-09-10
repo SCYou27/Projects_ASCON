@@ -5,13 +5,13 @@ We recorded 10000 traces (stored in 100 ZIP files) for testing our attack.
    The folder `inter_gen/` contains the pre-generated I/O data interacting with the device (including the keys, nonces, plaintexts, and the corresponding ciphers and tags) for trace recording. We moved the Python code into another folder `inter_gen_code/` to prevent overwriting the data we had used.  
 
 2. **Download the raw traces:**  
-   The 4000 raw traces are stored in 40 ZIP files. Please download the raw traces with the following commands:
+   The 10000 raw traces are stored in 100 ZIP files. Please download the raw traces with the following commands:
    
    `cd Raw/`  
    `./script_all.sh`
    
    Alternatively, please visit our university webpage to download the files manually:  
-   https://www.cl.cam.ac.uk/research/security/datasets/ascon/U-Os/index.html#VA  
+   https://www.cl.cam.ac.uk/research/security/datasets/ascon/U-Os/index.html#TS  
 
 3. **Check the raw traces and their corresponding AEAD outputs (ciphers and tags):**
    
@@ -20,6 +20,7 @@ We recorded 10000 traces (stored in 100 ZIP files) for testing our attack.
    
    This will check the quality of the recorded traces against the reference trace (`0001_reference/preproc/ref_trace.npy`) as well as whether the recorded responses from the CW-Lite board are equal to our pre-calculated ciphers and tags.
 
+***This page is still under revision!***
 <!--
 4. **Calculate our target intermediate values:**  
    With the pre-generated I/O data, we calculated all the target intermediate values. Unlike the cases in the detection and profiling stages, we did not perform a multiple linear regression with the intermediate values recorded in this stage. We just used the values as reference answers for validation. Therefore, we stored the intermediate values as an 8-bit or 16-bit integer here instead of binary variables in the two previous stages.     
