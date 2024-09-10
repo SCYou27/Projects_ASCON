@@ -1,5 +1,5 @@
 # Validation stage  
-We recorded 4000 traces (stored in 40 ZIP files) for template profiling.  
+We recorded 4000 traces (stored in 40 ZIP files) for template validation.  
 
 1. **Generate I/O data:**  
    The folder `inter_gen/` contains the pre-generated I/O data interacting with the device (including the keys, nonces, plaintexts, and the corresponding ciphers and tags) for trace recording. We moved the Python code into another folder `inter_gen_code/` to prevent overwriting the data we had used.  
