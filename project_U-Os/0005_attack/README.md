@@ -28,7 +28,7 @@ We recorded 10000 traces (stored in 100 ZIP files) for testing our attack.
    `cd data_SASCA/`  
    `./script_all.sh`  
    
-   Here we stored the 1000 key strings in 1000 separated NPY files in `data_SASCA/data_key.zip`. For the other I/O data, we stored them in `data_SASCA/data_nonce.zip`, `data_SASCA/data_plaintext.zip`, and `data_SASCA/data_ciphertag.zip`, where each NPY file contains a 10-element array that stores the data from the 10 encryptions sharing the same key with the corresponding index.  
+   Here we stored the 1000 key strings in 1000 separated NPY files in `data_SASCA/data_key.zip`. For the other I/O data, we stored them in `data_SASCA/data_nonce.zip`, `data_SASCA/data_plaintext.zip`, and `data_SASCA/data_ciphertag.zip`, where each NPY file contains a 10-element array that stores the same type of data from the 10 encryptions sharing the same key with the corresponding index.  
 
 5. **Downsample the raw traces**  
    With the following command lines, we downsampled the raw traces from 500 to 10 points per clock cycle (PPC) by summing up the values from every 50 consecutive samples to form the new traces:
