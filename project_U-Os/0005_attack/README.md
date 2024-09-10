@@ -2,9 +2,9 @@
 We recorded 10000 traces (stored in 100 ZIP files) for testing our attack.  
 
 1. **Generate I/O data:**  
-   The folder `inter_gen/` contains the pre-generated I/O data interacting with the device (including the keys, nonces, plaintexts, and the corresponding ciphers and tags) for trace recording. We moved the Python code into another folder `inter_gen_code/` to prevent overwriting the data we had used.  
+   The folder `inter_gen/` contains the pre-generated I/O data interacting with the device (including the keys, nonces, plaintexts, and the corresponding ciphers and tags) for trace recording. We moved the Python code into another folder `inter_gen_code/` to prevent overwriting the data we had used. Note that in these 10000 encryptions for recording, we had each 10 share the same key for extending our single-trace attack to a multi-trace attack.
 
-2. **Download the raw traces:**  
+3. **Download the raw traces:**  
    The 10000 raw traces are stored in 100 ZIP files. Please download the raw traces with the following commands:
    
    `cd Raw/`  
@@ -13,7 +13,9 @@ We recorded 10000 traces (stored in 100 ZIP files) for testing our attack.
    Alternatively, please visit our university webpage to download the files manually:  
    https://www.cl.cam.ac.uk/research/security/datasets/ascon/U-Os/index.html#TS  
 
-3. **Check the raw traces and their corresponding AEAD outputs (ciphers and tags):**
+   As mentioned we had every 10 encryptions share the same key, the first traces in `Raw/Raw_TS_0000.zip`, `Raw/Raw_TS_0010.zip`, ..., `Raw/Raw_TS_0090.zip` were recorded from encryptions with the same key, for example.  
+
+5. **Check the raw traces and their corresponding AEAD outputs (ciphers and tags):**
    
    `cd preproc/`  
    `./script_all.sh`
@@ -64,20 +66,6 @@ We recorded 10000 traces (stored in 100 ZIP files) for testing our attack.
    In these validation procedures, we divided the traces into four groups with equal size: G0 for the first 1000 traces, G1 for the second ones, G2 for the third ones, and G3 for the last ones. The validation results from G0 were reported and published in our paper, whereas the others were for comparison.
 
 <h3 id=U-Os-attack>Attack (Testing) traces</h3>
-<p>We recorded 10000 traces (stored in 100 ZIP files) for our SASCA attacks.</p>
-
-<p>Data pre-generating, raw traces, and trace pre-processing:</p>
-
-<ul>
-<li><a href="U-Os/0005_attack/inter_gen_TS.zip">inter_gen_TS.zip (updated 2024-05-02)</a>
-</li>
-
-<li><a href="U-Os/index.html#TS">Raw traces for the attack (testing) set</a>
-</li>
-
-<li><a href="U-Os/0005_attack/preproc_TS.zip">preproc_TS.zip (updated 2024-05-02)</a>
-</li>
-</ul>
 
 <p>Note that in these 10000 encryptions for recording, we had each 10 share the same key. For example, the first traces in "Raw/Raw_TS_0000.zip", "Raw/Raw_TS_0010.zip", ..., "Raw/Raw_TS_0090.zip" were recorded from encryptions with the same key.</p>
 
