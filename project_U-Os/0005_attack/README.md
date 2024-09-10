@@ -23,12 +23,12 @@ We recorded 10000 traces (stored in 100 ZIP files) for testing our attack.
    This will check the quality of the recorded traces against the reference trace (`0001_reference/preproc/ref_trace.npy`) as well as whether the recorded responses from the CW-Lite board are equal to our pre-calculated ciphers and tags.  
 
 4. **Rearrange the I/O data:**  
-In this attack stage, we do not need the intermediate values but only the pre-generated I/O date to verify the correctness of our recovered key by SASCA. However, for the convenience of our attack, we still rearranged the pre-generated I/O data by:  
-
-`cd data_SASCA/`  
-`./script_all.sh`  
-
-Here we stored the 1000 key strings in 1000 separated NPY files `data_key.zip`.  
+   In this attack stage, we do not need the intermediate values but only the pre-generated I/O date to verify the correctness of our recovered key by SASCA. However, for the convenience of our attack, we still rearranged the pre-generated I/O data by:  
+   
+   `cd data_SASCA/`  
+   `./script_all.sh`  
+   
+   Here we stored the 1000 key strings in 1000 separated NPY files `data_key.zip`.  
 ***This page is still under revision!***
 <!--
 
