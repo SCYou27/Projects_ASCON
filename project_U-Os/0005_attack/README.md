@@ -30,7 +30,7 @@ We recorded 10000 traces (stored in 100 ZIP files) for testing our attack.
    
    Here we stored the 1000 key strings in 1000 separated NPY files in `data_SASCA/data_key.zip`. For the other I/O data, we stored them in `data_SASCA/data_nonce.zip`, `data_SASCA/data_plaintext.zip`, and `data_SASCA/data_ciphertag.zip`, where each NPY file contains a 10-element array that stores the same type of data from the 10 encryptions sharing the same key with the corresponding index.
 
-   Besides, as a preparation for the later histogram-based key-rank estimation, we cut the key strings into 1-bit, 8-bit, and 16-bit fragments:  
+   Besides, as a preparation for the later histogram-based key-rank estimation, we also cut the key strings into 1-bit, 8-bit, and 16-bit fragments:  
    
    `cd data_fragments/`  
    `./script_all.sh`  
