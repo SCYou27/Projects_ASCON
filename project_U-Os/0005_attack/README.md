@@ -4,7 +4,7 @@ We recorded 10000 traces (stored in 100 ZIP files) for testing our attack.
 1. **Generate I/O data:**  
    The folder `inter_gen/` contains the pre-generated I/O data interacting with the device (including the keys, nonces, plaintexts, and the corresponding ciphers and tags) for trace recording. We moved the Python code into another folder `inter_gen_code/` to prevent overwriting the data we had used. Note that in these 10000 encryptions for recording, we had each 10 share the same key for extending our single-trace attack to a multi-trace attack.
 
-3. **Download the raw traces:**  
+2. **Download the raw traces:**  
    The 10000 raw traces are stored in 100 ZIP files. Please download the raw traces with the following commands:
    
    `cd Raw/`  
@@ -15,7 +15,7 @@ We recorded 10000 traces (stored in 100 ZIP files) for testing our attack.
 
    As mentioned we had every 10 encryptions share the same key, the first traces in `Raw/Raw_TS_0000.zip`, `Raw/Raw_TS_0010.zip`, ..., `Raw/Raw_TS_0090.zip` were recorded from encryptions with the same key, for example.  
 
-5. **Check the raw traces and their corresponding AEAD outputs (ciphers and tags):**
+3. **Check the raw traces and their corresponding AEAD outputs (ciphers and tags):**
    
    `cd preproc/`  
    `./script_all.sh`
@@ -23,13 +23,18 @@ We recorded 10000 traces (stored in 100 ZIP files) for testing our attack.
    This will check the quality of the recorded traces against the reference trace (`0001_reference/preproc/ref_trace.npy`) as well as whether the recorded responses from the CW-Lite board are equal to our pre-calculated ciphers and tags.  
 
 4. **Rearrange the I/O data:**  
-   In this attack stage, we do not need the intermediate values but only the pre-generated I/O date to verify the correctness of our recovered key by SASCA. However, for the convenience of our attack, we still rearranged the pre-generated I/O data by:  
+   In this attack stage, we do not need the intermediate values but only the pre-generated I/O data to feed into the belief propagation procedure as the known data (the plaintexts, nonces, ciphertexts, and tags), or as the reference (the pre-generated key strings) to verify the correctness of our recovered keys. However, for the convenience of our attack, we still rearranged these pre-generated I/O data by:  
    
    `cd data_SASCA/`  
    `./script_all.sh`  
    
-   Here we stored the 1000 key strings in 1000 separated NPY files in `data_SASCA/data_key.zip`. For the other I/O data, we stored them in `data_SASCA/data_nonce.zip`, `data_SASCA/data_plaintext.zip`, and `data_SASCA/data_ciphertag.zip`, where each NPY file contains a 10-element array that stores the same type of data from the 10 encryptions sharing the same key with the corresponding index.  
+   Here we stored the 1000 key strings in 1000 separated NPY files in `data_SASCA/data_key.zip`. For the other I/O data, we stored them in `data_SASCA/data_nonce.zip`, `data_SASCA/data_plaintext.zip`, and `data_SASCA/data_ciphertag.zip`, where each NPY file contains a 10-element array that stores the same type of data from the 10 encryptions sharing the same key with the corresponding index.
 
+   Besides, as a preparation for the later histogram-based key-rank estimation, we cut the key strings into 1-bit, 8-bit, and 16-bit fragments:  
+   
+   `cd data_fragments/`  
+   `./script_all.sh`  
+   
 5. **Downsample the raw traces**  
    With the following command lines, we downsampled the raw traces from 500 to 10 points per clock cycle (PPC) by summing up the values from every 50 consecutive samples to form the new traces:
 
