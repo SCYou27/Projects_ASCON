@@ -43,10 +43,10 @@ We recorded 10000 traces (stored in 100 ZIP files) for testing our attack.
    
 6. **Generate probability tables with template attack and belief propagation**  
    We generated probability tables with four different scenarios as follows:  
-   - Tables for 8-bit key fragments with probabilities estimated by only key templates  
-   - Tables for 8-bit key fragments with probabilities estimated after belief propagation on information from templates for the key and intermediate values involved in the tag generation step  
-   - Tables for 16-bit key fragments with probabilities estimated after belief propagation on information from templates for the key and intermediate values involved in the tag generation step  
-   - Tables for 1-bit key fragments with probabilities estimated after loopy belief propagation on marginalized information from templates for all targeted intermediate values in an encryption  
+   - Tables for 8-bit key fragments with probabilities estimated by only key templates (the _key_ attack)  
+   - Tables for 8-bit key fragments with probabilities estimated after belief propagation on information from templates for the key and intermediate values involved in the tag generation step (the _byte_ attack)  
+   - Tables for 16-bit key fragments with probabilities estimated after belief propagation on information from templates for the key and intermediate values involved in the tag generation step (the _16-bit_ attack)  
+   - Tables for 1-bit key fragments with probabilities estimated after loopy belief propagation on marginalized information from templates for all targeted intermediate values in an encryption (the _loopy_ attack)  
 
 ***This page is still under revision!***
 <!--
