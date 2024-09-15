@@ -1,7 +1,5 @@
 # Pre-detection traces  
 
-***This README file is still being revised...***
-
 We found it required a window with 18000 clock cycles to cover complete encryption with the masked implementation optimized for space. Given that we only targeted the clock cycles that were related to the operations on keys and tag generation, it was not necessary to store raw traces as long as 18000x500 samples. Instead, we recorded only 1600 traces covering all 18000 clock cycles for a pre-detection step to determine which regions of clock cycles we should keep in the later recorded traces (for the Reference, Detection, Profiling, Validation, and Attack stages).  
 
 Besides, we had the NI computer controlling the oscilloscope downsample the raw traces to 50 points per clock cycle and stored the downsampled traces in our HDF5 files as the _traces_ dataset. Meanwhile, for the recordings for pre-detection and detection, we also had the NI computer calculate the samples for detection (the summed value for the 50 raw samples around the peak in each clock cycle, same as previously in the U-Os and U-O3 cases), and stored in the HDF5 files as the _detects_ dataset.  
@@ -11,6 +9,7 @@ The pre-detection stage is divided into the following small tasks:
 1. **Generate I/O data:**  
    The folder `inter_gen/` contains the pre-generated I/O data interacting with the device (including the keys, nonces, plaintexts, and the corresponding ciphers and tags) for trace recording. We moved the Python code into another folder `inter_gen_code/` to prevent overwriting the data we had used.  
 
+***This README file is still being revised...***
 <!--
 2. **Download the raw traces:**  
    The 1600 raw traces are stored in 10 HDF5 files. Please download the raw traces with the following commands:  
