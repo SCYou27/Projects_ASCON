@@ -11,9 +11,9 @@ The pre-detection stage is divided into the following small tasks:
 
 ***This README file is still being revised...***
 <!--
-2. **Download the raw traces:**  
-   The 1600 raw traces are stored in 10 HDF5 files. Please download the raw traces with the following commands:  
-   `cd Raw/`  
+2. **Download the downsampled traces:**  
+   The 1600 downsampled traces are stored in 10 HDF5 files. Please download the raw traces with the following commands:  
+   `cd Samples/`  
    `./script_all.sh`  
    Alternatively, please visit our university webpage to download the files manually:  
    https://www.cl.cam.ac.uk/research/security/datasets/ascon/U-Os/index.html#RE  
