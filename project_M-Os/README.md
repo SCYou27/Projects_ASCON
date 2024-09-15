@@ -1,10 +1,10 @@
 # Experiments on M-Os data set  
 
-When we recorded our traces for experiments, we categorized the traces into five different groups: _Pre-detection, Reference, Detection, Profiling (Training), Validation, and Attack (Testing)_. In this repository, we **DO NOT** include our Python scripts for recording, but they can be found  in the following link:
+When we recorded our traces for experiments, we categorized the traces into six different groups: _Pre-detection, Reference, Detection, Profiling (Training), Validation, and Attack (Testing)_. In this repository, we **DO NOT** include our Python scripts for recording, but they can be found  in the following link:
 
-    https://www.cl.cam.ac.uk/research/security/datasets/ascon/src_recording/CW_ASCON_recording_20240414.zip
+    https://www.cl.cam.ac.uk/research/security/datasets/ascon/src_recording/CW_ASCON_masked_20240528.zip
 
-Please check our [university webpage](https://www.cl.cam.ac.uk/research/security/datasets/ascon/index.html#U-Os-recording) for any interest in recording with the same National Instruments platform.  
+Please check our [university webpage](https://www.cl.cam.ac.uk/research/security/datasets/ascon/index.html#M-Os-recording) for any interest in recording with the same National Instruments platform.  
 
 When we recorded our traces for experiments, we categorized the traces into the following five groups in separate subdirectories:  
  -  **0000\_predetection:** to determine the window for our recording.
