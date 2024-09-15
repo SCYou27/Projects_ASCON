@@ -9,16 +9,15 @@ The pre-detection stage is divided into the following small tasks:
 1. **Generate I/O data:**  
    The folder `inter_gen/` contains the pre-generated I/O data interacting with the device (including the keys, nonces, plaintexts, and the corresponding ciphers and tags) for trace recording. We moved the Python code into another folder `inter_gen_code/` to prevent overwriting the data we had used.  
 
-***This README file is still being revised...***
-<!--
 2. **Download the downsampled traces:**  
-   The 1600 downsampled traces are stored in 10 HDF5 files. Please download the raw traces with the following commands:  
+   The 1600 downsampled traces are stored in 10 HDF5 files. Please download these traces with the following commands:  
    `cd Samples/`  
    `./script_all.sh`  
    Alternatively, please visit our university webpage to download the files manually:  
-   https://www.cl.cam.ac.uk/research/security/datasets/ascon/U-Os/index.html#RE  
+   https://www.cl.cam.ac.uk/research/security/datasets/ascon/M-Os/index.html#PD  
 
-
+***This README file is still being revised...***
+<!--
 3. **Process the raw traces and find the reference trace:**  
    `cd preproc/`  
    `./script_all.sh`  
