@@ -7,6 +7,7 @@ When we recorded our traces for experiments, we categorized the traces into five
 Please check our [university webpage](https://www.cl.cam.ac.uk/research/security/datasets/ascon/index.html#U-Os-recording) for any interest in recording with the same National Instruments platform.  
 
 When we recorded our traces for experiments, we categorized the traces into the following five groups in separate subdirectories:  
+ -  **0000\_predetection:** to determine the window for our recording.
  -  **0001\_reference:** to find a reference trace for recording quality checking.
  -  **0002\_detection:** to determine points of interest (PoI). 
  -  **0003\_training:** to build our templates.
