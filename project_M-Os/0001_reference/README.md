@@ -1,5 +1,7 @@
-# Reference traces
+# Reference traces  
 
+***This README file is still being revised...***  
+<!--
 We recorded 1600 traces and took their arithmetic mean vector as a reference trace, so the later recorded traces can be compared against this reference trace to check whether some unexpected event happened and resulted in a wrong recording. This will be divided into the following small tasks:  
 
 1. **Generate I/O data:**  
@@ -18,7 +20,7 @@ We recorded 1600 traces and took their arithmetic mean vector as a reference tra
    This will generate the reference trace `preproc/ref_trace.npy` for trace quality validation in the later phases.  
 
 
-<!--
+
 
 <h2 id=M-Os>M-Os experiments</h2>
 
