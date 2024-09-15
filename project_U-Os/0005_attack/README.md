@@ -48,9 +48,9 @@ We recorded 10000 traces (stored in 100 ZIP files) for testing our attack.
    - Tables for 16-bit key fragments with probabilities estimated after belief propagation on information from templates for the key and intermediate values involved in the tag generation step (the _16-bit_ attack)  
    - Tables for 1-bit key fragments with probabilities estimated after loopy belief propagation on marginalized information from templates for all targeted intermediate values in a full AEAD procedure (the _loopy_ attack)
 
-   _key attack_:
-   The probability tables are the direct estimation with templates for the 8-bit, H/L key fragments.
-   `cd template_attack_keys_O_TABLES/`
+   _key attack_:  
+   The probability tables are the direct estimation with templates for the 8-bit, H/L key fragments.  
+   `cd template_attack_keys_O_TABLES/`  
    `./script_all.sh`  
 
 ***This page is still under revision!***
