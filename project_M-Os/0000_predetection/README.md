@@ -26,32 +26,9 @@ The pre-detection stage is divided into the following small tasks:
 
 <h3 id=M-Os-recording>Code for recording on the NI platform</h3>
 
-<p>The Python scripts to control the recording platform:</p>
-
-<ul>
-<li><a href="src_recording/CW_ASCON_masked_20240528.zip">CW_ASCON_masked_20240528.zip</a>
-</li>
-</ul>
-
-<p>We found it required a window with 18000 clock cycles to cover a complete encrypotion with the masked implementation optimized for space. Given that we only targeted the clockc cycles that were related to the operations on keys and tag generation, it was not necessary to store raw traces as long as \(18000 \times 500\). Instead, we recorded only 1600 traces covering all 18000 clock cycles for a pre-detection step to determine which regions of clock cycles we should keep in the later recorded traces (for reference, detection, profiling, validation, and attack). Besides, we had the NI computer controlling the oscilloscope downsample the raw traces to 50 points per clock cycle and stored the downsampled traces in our HDF5 files (the 'traces' dataset in Sample_{PD,RE,DN,TR,VA,TS}_****.hdf5). Meanwhile, for the recordings for pre-detection and detection, we also had the NI computer calculate the samples for detection (the summed value for the 50 raw samples around the peak in each clock cycle, same as previously in the U-Os and U-O3 cases), and stored in the HDF5 files as the 'detects' dataset.</p>
 
 <h3 id=M-Os-predetection>Pre-detection traces</h3>
 
-<p>I/O data pre-generation and downsampled complete traces:</p>
-
-<ul>
-<li><a href="M-Os/0000_predetection/inter_gen_PD.zip">inter_gen_PD.zip (updated 2024-05-29)</a></li>
-<li><a href="M-Os/0000_predetection/Samples/Samples_PD_0000.hdf5">Samples/Samples_PD_0000.hdf5 (updated 2024-05-29)</a></li>
-<li><a href="M-Os/0000_predetection/Samples/Samples_PD_0001.hdf5">Samples/Samples_PD_0001.hdf5 (updated 2024-05-29)</a></li>
-<li><a href="M-Os/0000_predetection/Samples/Samples_PD_0002.hdf5">Samples/Samples_PD_0002.hdf5 (updated 2024-05-29)</a></li>
-<li><a href="M-Os/0000_predetection/Samples/Samples_PD_0003.hdf5">Samples/Samples_PD_0003.hdf5 (updated 2024-05-29)</a></li>
-<li><a href="M-Os/0000_predetection/Samples/Samples_PD_0004.hdf5">Samples/Samples_PD_0004.hdf5 (updated 2024-05-29)</a></li>
-<li><a href="M-Os/0000_predetection/Samples/Samples_PD_0005.hdf5">Samples/Samples_PD_0005.hdf5 (updated 2024-05-29)</a></li>
-<li><a href="M-Os/0000_predetection/Samples/Samples_PD_0006.hdf5">Samples/Samples_PD_0006.hdf5 (updated 2024-05-29)</a></li>
-<li><a href="M-Os/0000_predetection/Samples/Samples_PD_0007.hdf5">Samples/Samples_PD_0007.hdf5 (updated 2024-05-29)</a></li>
-<li><a href="M-Os/0000_predetection/Samples/Samples_PD_0008.hdf5">Samples/Samples_PD_0008.hdf5 (updated 2024-05-29)</a></li>
-<li><a href="M-Os/0000_predetection/Samples/Samples_PD_0009.hdf5">Samples/Samples_PD_0009.hdf5 (updated 2024-05-29)</a></li>
-</ul>
 
 <p>Then we used the following code to find the mean traces for reference and check the quality of these 1600 traces (no problems detected):</p>
 
