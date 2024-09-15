@@ -51,6 +51,16 @@ We recorded 10000 traces (stored in 100 ZIP files) for testing our attack.
    _key attack_:  
    The probability tables are the direct estimation with templates for the 8-bit, H/L key fragments.  
    `cd template_attack_keys_O_TABLES/`  
+   `./script_all.sh`
+
+   _byte attack_:  
+   The probability tables are the estimation with templates for the 8-bit, H/L key fragments, after being updated with belief propagation that also considers the intermediate values involved in the tag generation step.  
+   `cd template_attack_bytes_O_TABLES/`  
+   `./script_all.sh`  
+
+   _16-bit attack_:  
+   The probability tables are the estimation with templates for the 16-bit, H/L key fragments, after being updated with belief propagation that also considers the intermediate values involved in the tag generation step.  
+   `cd template_attack_16bits_O_TABLES/`  
    `./script_all.sh`  
 
 ***This page is still under revision!***
