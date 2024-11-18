@@ -55,7 +55,7 @@ Here we select the interesting clock cycles given that we already have the R-squ
 	`python3 ics_union.py 0.002`  
 	`python3 ics_union.py 0.001`  
 
-5. The (union) interesting clock cycles will be used in the later profiling, validation, and testing stages.  
+5. The (union) interesting clock cycles will be used in the later profiling, validation, and attack stages.  
 
 6. Directly download the resulting data from our server:  
 	`./download.sh`  
