@@ -18,8 +18,8 @@ Target: to calculate the intermediate values we need in each round of initializa
 	(d) pack up the data:  
 		`./pack.sh`  
 
-4. The resulting zip file (intermediate_values.zip) will be used in the later detection procedures:  
-	`detection_S/`  
+4. The resulting zip file (`intermediate_values.zip`) will be used in the later detection procedures:  
+	`../detection_S/`  
 
 5. Directly download the resulting data from our server:  
 	`./download.sh`  
