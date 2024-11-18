@@ -15,7 +15,7 @@ Target: to calculate the intermediate values we need in each round of initializa
 	(c) check the results:  
 		`python3 check_combine.py`
 
-	(d) pack up the data:
+	(d) pack up the data:  
 		`./pack.sh`  
 
 4. The resulting zip file (intermediate_values.zip) will be used in the later detection procedures:  
