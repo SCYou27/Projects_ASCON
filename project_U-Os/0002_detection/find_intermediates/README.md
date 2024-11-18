@@ -26,8 +26,8 @@ Target: to calculate the intermediate values we need in each round of initializa
 		`zip intermediate_values.zip -r intermediate_values/`  
 		`rm -vr __pycache__/ keys/ nonces/ plaintexts/ ciphertags/ intermediate_HEX/ intermediate_values/`  
 
-3. The resulting zip file (intermediate_values.zip) will be used in the later detection procedures:  
-	`detection_O/`  
+3. The resulting zip file (`intermediate_values.zip`) will be used in the later detection procedures:  
+	`../detection_O/`  
 
 4. Directly download the resulting data from our server:  
 	`./download.sh`  
