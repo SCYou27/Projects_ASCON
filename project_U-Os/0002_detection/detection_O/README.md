@@ -1,23 +1,26 @@
 ## Tasks in this folder
 
-The main target here is to find the samples for detection. We used one sample per clock cycle to determine whether a clock cycle is interesting. We calculated the summation of 50 points around the peak of a clock cycle as such a sample for detection.  
+We applied multiple linear regression on the processed samples against the values of the intermediate binary variables to calculate the coefficient of determination (_R_<sup>2</sup>) between each sample and each target intermediate byte (H/L ordered). The results will be stored in `detection_O/detect_results_08.zip`, and this will also calculate the summed _R_<sup>2</sup> of those from the four member bytes to represent the value for a target 32-bit intermediate word, stored in `detection_O/detect_results_32.zip`.    
 
 1. The all-in-one script:  
 	`./script_all.sh`  
 
 2. Tasks in `script_all.sh`:  
-	(a) with the downloaded raw traces in `../Raw/`, we find the target samples by:  
-		`python3 get_samples.py 0 100`  
+	(a) copy the H/L intermediate bytes from `../find_intermediates/`, and generate folders `detect_results_08` and`detect_results_32`:  
+		`./init.sh`  
 
-	(b) remove the `pyc` files:  
-		`rm -r __pycache__/`  
+	(b) apply multiple linear regression:  
+		`python3 detect_script.py`
 
-3. The samples will be used in the later detection procedures in `../detection_O/` and `../detection_S/`.  
+	(c) pack up the results:  
+		`./pack.sh`  
 
-4. Directly download the resulting data from our server:  
+4. The coefficients will be used in `ICS_extract` to determine the interesting clock cycles.  
+
+5. Directly download the resulting data from our server:  
 	`./download.sh`  
 
-5. Clean all the generated data (to restart):  
+6. Clean all the generated data (to restart):  
 	`./clean.sh`  
 
  
