@@ -4,7 +4,7 @@
 	`python3 check.py all 0 100`  
    This will also check whether the response is consistent with the pre-calculated values in `../inter_gen/ciphertags.zip`.
    
-2. The all-in-one script (including copying the pre-calculated values):
+2. The all-in-one script (including copying the pre-calculated values):  
 	`./script_all.sh`  
 
 3. Directly download the generated data from our server:  
