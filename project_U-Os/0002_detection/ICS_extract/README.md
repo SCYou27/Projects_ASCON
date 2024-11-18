@@ -10,8 +10,8 @@ Here we select the interesting clock cycles given that we already have the R-squ
 	`./ics_union.sh`  
 
 3. tasks in script `ics_original.sh`:  
-	`unzip ../detection_O/detect_results_32.zip` # The dependent data: R-square values  
-	`python3 ics_original.py 0.040` # Extract the interesting clock cycles with R-square values against H/L bytes higher than 0.040   
+	`unzip ../detection_O/detect_results_32.zip` # _The dependent data: R-square values_  
+	`python3 ics_original.py 0.040` # _Extract the interesting clock cycles with R-square values against H/L bytes higher than 0.040_   
 	`python3 ics_original.py 0.035`  
 	`python3 ics_original.py 0.030`  
 	`python3 ics_original.py 0.025`  
