@@ -6,7 +6,7 @@ We downsample the raw traces from 500 to 10 points per clock cycle (PPC) by summ
 	`./script_all.sh`  
 
 2. Tasks in `script_all.sh`:  
-	(a) Downsample the raw traces and store the downsampled traces in 8 HDF5 files.  
+	(a) Downsample the raw traces and store the downsampled traces in 8 HDF5 files, each contains 8000 traces.  
 		`python3 downsampling.py 0 8`  
 
 	(b) Remove the pyc files.  
