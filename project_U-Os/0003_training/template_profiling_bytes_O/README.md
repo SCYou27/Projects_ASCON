@@ -6,7 +6,7 @@ Goal: to build the templates for 8-bit, H/L-ordered intermediate values in each 
 	`./script_all.sh`  
 
 2. Tasks in `script_all.sh`:  
-	(a) initialize the procedure (to load the pre-processed intermeidate values and interesting clock cycle sets, and to create folders to store the generated templates):  
+	(a) initialize the procedure (to load the pre-processed intermediate values and interesting clock cycle sets, and to create folders to store the generated templates):  
 		`tag='004'`  
 		`./init.sh ${tag}`  
 		The variable `tag` denotes the _R_<sup>2</sup> threshold (`>0.004`) to determine interesting clock cycles.
@@ -16,7 +16,7 @@ Goal: to build the templates for 8-bit, H/L-ordered intermediate values in each 
 
 	(c) pack up the data:  
 		`./pack.sh ${tag}`  
-		This will archive the templates in `templateLDA_O004.zip`, for the later template validation (see `../../0004_validation/`) and attacks (see `../../0005_attack`)  
+		This will archive the templates in `templateLDA_O004.zip`, for the later template validation (see `../../0004_validation/`) and attacks (see `../../0005_attack/`)  
 
 3. Directly download the templates from our server:  
 	`./download.sh`  
