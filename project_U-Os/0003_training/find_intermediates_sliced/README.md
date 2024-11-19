@@ -1,6 +1,6 @@
 ## Tasks in this folder
 
-Target: to calculate the intermediate values we need in each round of initialization and finalization for 8-bit E/O template profiling.  
+Goal: to calculate the intermediate values we need in each round of initialization and finalization for 8-bit E/O template profiling.  
 
 1. The all-in-one script:  
 	`./script_all.sh`  

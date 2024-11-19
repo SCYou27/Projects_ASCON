@@ -1,6 +1,6 @@
 ## Tasks in this folder
 
-Target: to calculate the intermediate values we need in each round of initialization and finalization for 16-bit H/L template profiling.  
+Goal: to calculate the intermediate values we need in each round of initialization and finalization for 16-bit H/L template profiling.  
 
 1. The all-in-one script:  
 	`./script_all.sh`  
