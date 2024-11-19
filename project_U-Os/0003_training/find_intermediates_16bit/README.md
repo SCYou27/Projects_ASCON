@@ -18,7 +18,7 @@ Target: to calculate the intermediate values we need in each round of initializa
 		`zip intermediate_values.zip -r intermediate_values/`  
 		`rm -vr intermediate_values/ intermediate_values_bytes/`  
 
-4. The resulting zip file (`intermediate_values.zip`) will be used in the later detection procedures:  
+4. The resulting zip file (`intermediate_values.zip`) will be used in the later template-profiling procedures:  
 	`../template_profiling_16bits_O/`  
 
 5. Directly download the resulting data from our server:  

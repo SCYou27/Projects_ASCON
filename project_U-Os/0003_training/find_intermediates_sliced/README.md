@@ -18,7 +18,7 @@ Target: to calculate the intermediate values we need in each round of initializa
 	(d) pack up the data:  
 		`./pack.sh`  
 
-4. The resulting zip file (`intermediate_values.zip`) will be used in the later detection procedures:  
+4. The resulting zip file (`intermediate_values.zip`) will be used in the later template-profiling procedures:  
 	`../template_profiling_bytes_S/`  
 
 5. Directly download the resulting data from our server:  
