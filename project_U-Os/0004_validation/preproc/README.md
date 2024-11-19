@@ -1,15 +1,16 @@
-1. compress.py:
-	When the oscilloscope is recording the traces for the reference data set, execute the following script to move and compress the data:
+## Tasks in this folder
 
-	python3 compress.py 0 100
+1. check.py: to check the quality of the recorded traces with the reference trace (`ref_trace.npy`) by:  
+	`python3 check.py all 0 40`  
+   This will also check whether the response is consistent with the pre-calculated values in `../inter_gen/ciphertags.zip`.
+   
+2. The all-in-one script (including copying the pre-calculated values):  
+	`./script_all.sh`  
 
-	We separate the date set into ten subsets, and the compressed files shall be stored as:
+3. Directly download the generated data from our server:  
+	`./download.sh`  
 
-	../Raw/Raw_DN_*.zip
+4. Clean the generated data (to restart):  
+	`./clean.sh`  
 
-
-2. check.py:
-	To check the quality of the recorded traces with the reference trace (ref_trace.npy) by:
-
-	python3 check.py all 0 100
 
