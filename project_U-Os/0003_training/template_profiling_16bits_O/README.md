@@ -1,6 +1,6 @@
 ## Tasks in this folder
 
-Goal: to build the templates for 16-bit, H/L-ordered intermediate values around the tag generation step in ASCON-128. The target values include the key, and the fragments in the last two lanes of the output from the final invocation of ASCON permutation in the ASCON-128 encreyption.
+Goal: to build the templates for 16-bit, H/L-ordered intermediate values around the tag generation step in ASCON-128. The target values include the key and the fragments in the last two lanes of the output from the final invocation of ASCON permutation in the ASCON-128 encryption.
 
 1. The all-in-one script:  
 	`./script_all.sh`  
@@ -22,7 +22,7 @@ Goal: to build the templates for 16-bit, H/L-ordered intermediate values around 
 	(c) pack up the data:  
 		`zip templateLDA_O${tag}_${detail}.zip -r templateLDA_O${tag}_${detail}/`  
 		`rm -vr intermediate_values/ templateLDA_O${tag}_${detail}/ ics_union_${tag}/ __pycache__/`  
-		This will archive the templates in `templateLDA_O004.zip`, for the later template validation (see `../../0004_validation/`) and attacks (see `../../0005_attack/`)  
+		This will archive the templates in `templateLDA_O004_16bit.zip`, for the later template validation (see `../../0004_validation/`) and attacks (see `../../0005_attack/`)  
 
 3. Directly download the templates from our server:  
 	`./download.sh`  
