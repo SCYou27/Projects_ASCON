@@ -17,4 +17,4 @@
 	`./script_all.sh`  
    
 6. clean the generated data to restart:  
-	`./clean.sh`   
+	`./clean.sh`  
