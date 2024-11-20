@@ -6,9 +6,9 @@ After the downsampling procedure in `../Resample_HDF5/`, we divided the 4000 tra
 
 1. the all-in-one script:
 	`./script_all.sh`  
-	This will generate the ZIP files: `Rank_O004.zip` contains the rank data of the correct candidate for the target fragment in each validation trials, while `Result_Tables.zip` contains the SR and GE values we calculated based on the rank data.  
+	This will generate the ZIP files: `Rank_O004.zip` contains the rank data of the correct candidate for the target fragment in each validation trial, while `Result_Tables.zip` contains the SR and GE values we calculated based on the rank data.  
 
-2. print the result tables:
+2. print the result tables:  
 	`./table_print.sh`  
 
 3. Directly download the resulting data from our server:  
