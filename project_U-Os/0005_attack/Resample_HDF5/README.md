@@ -6,16 +6,14 @@ We downsample the raw traces from 500 to 10 points per clock cycle (PPC) by summ
 	`./script_all.sh`  
 
 2. Tasks in `script_all.sh`:  
-	(a) Downsample the raw traces and store the downsampled traces in 4 HDF5 files, each containing 1000 traces.  
-		`python3 downsampling.py 0 4`  
+	(a) Downsample the raw traces and store the downsampled traces in 10 HDF5 files, each containing 1000 traces.  
+		`python3 downsampling.py 0 10`  
+		The trace with the same index from each file comes from an encryption with the same key.  
 
 	(b) Remove the pyc files.  
 		`rm -r __pycache__/`  
 
-3. The HDF5 will be used in the later validation procedures:  
-	`../template_validation_bytes_O/`  
-	`../template_validation_bytes_S/`  
-	`../template_validation_16bits_O/`  
+3. The HDF5 will be used in the later probability table generation in our attack procedures:  
 
 4. Directly download the HDF5 files from our server:  
 	`./download.sh`  
