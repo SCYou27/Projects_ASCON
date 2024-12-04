@@ -17,7 +17,7 @@ When we recorded our traces for experiments, we categorized the traces into the 
 
 The Python code and data sets for our U-O3 experiments are quite similar to those for our U-Os experiments, except for the following minor differences:
 
- - **Data format for raw traces:** The raw traces are stored as arrays of 8-byte floating-point numbers for the U-Os experiments, then archived in ZIP files. For the U-O3 experiments, the raw data are stored in HDF5 files instead of ZIP files. Since the oscilloscope provides only 10-bit data, storing the samples as 8-byte floating-point numbers would be a waste. Instead, we had NI oscilloscope return traces as 16-bit integer arrays along with common gain and offset floating-point values and stored them in our HDF5 files.
+ - **Data format for raw traces:** The raw traces are stored as arrays of 8-byte floating-point numbers for the U-Os experiments, then compressed into ZIP files. For the U-O3 experiments, the raw data are instead compressed and stored in [HDF5](https://www.hdfgroup.org/solutions/hdf5/) files. Since the oscilloscope provides only 10-bit samples, storing each as a 8-byte floating-point number would be wasteful. Instead, we had the NI oscilloscope return traces as 16-bit integer arrays, along with a common floating-point gain and offset values, also stored in our HDF5 files, to enable conversion back into volt values.
  - **Length of downsampled traces:** Each downsampled trace covers 2560 clock cycles in our U-O3 data sets, while it covers 2650 clock cycles in the U-Os data sets.
 
 Please check the REAMDE.md in each subdirectory for detailed instructions.
