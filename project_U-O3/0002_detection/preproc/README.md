@@ -1,10 +1,16 @@
-We separate the date set into 100 subsets, and the compressed files shall be stored as:
+## Tasks in this folder
 
-	../Raw/Raw_DN_*.hdf5
+1. check.py: to check the quality of the recorded traces with the reference trace (`ref_trace.npy`) by:  
+	`python3 check.py all 0 100`  
+   This will also check whether the response is consistent with the pre-calculated values in `../inter_gen/ciphertags.zip`.
+   
+2. The all-in-one script (including copying the pre-calculated values):  
+	`./script_all.sh`  
 
+3. Directly download the generated data from our server:  
+	`./download.sh`  
 
-1. check.py:
-	To check the quality of the recorded traces with the reference trace (ref_trace.npy) by:
+4. Clean the generated data (to restart):  
+	`./clean.sh`  
 
-	python3 check.py all 0 100
 
