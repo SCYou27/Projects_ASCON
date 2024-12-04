@@ -68,18 +68,12 @@ We recorded 10000 traces (stored in 100 ZIP files) for testing our attack.
    `cd template_attack_loopy_D99_TABLES_LXX/` (`"XX"={"02","03",...,"10"}`)  
    `./script_all.sh`  
 
+7. **Key enumeration**  
+   With the probability tables, we apply the key enumeration algorithm to enumerate up to 100000 candidates to estimate the success rate within this computation capacity.  
+
+
 ***This page is still under revision!***
 <!--
-
-<h3 id=U-Os-attack>Attack (Testing) traces</h3>
-
-<p>With the preprocessing steps above, we performed our attack with belief propagation based on the loopy factor graph with the following code:</p>
-
-<ul>
-<li><a href="U-Os/0005_attack/template_attack_loopy_D99_LXX.zip">template_attack_loopy_D99_LXX.zip (updated 2024-05-14)</a>.</li>
-</ul>
-
-<p>After decompressing this ZIP file, we should manually rename the directory with the number of traces (four traces for example):</p>
 
 <ul>
 <li>"template_attack_loopy_D99_LXX/" to "template_attack_loopy_D99_L04/",</li>
