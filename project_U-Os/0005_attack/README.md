@@ -58,6 +58,14 @@ We recorded 10000 traces (stored in 100 ZIP files) for testing our attack.
 
    _16-bit attack_:  
    `cd template_attack_16bits_O_TABLES/`  
+   `./script_all.sh`
+
+   _loopy attack with a single trace_:  
+   `cd template_attack_loopy_D99_TABLES_L01/`  
+   `./script_all.sh`  
+
+   _loopy attack with multiple traces_:  
+   `cd template_attack_loopy_D99_TABLES_LXX/` ("XX"={02,03,...,10})  
    `./script_all.sh`  
 
 ***This page is still under revision!***
