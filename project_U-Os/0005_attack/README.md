@@ -65,7 +65,7 @@ We recorded 10000 traces (stored in 100 ZIP files) for testing our attack.
    `./script_all.sh`  
 
    _loopy attack with multiple traces_:  
-   `cd template_attack_loopy_D99_TABLES_LXX/` ("XX"={02,03,...,10})  
+   `cd template_attack_loopy_D99_TABLES_LXX/` (`"XX"={"02","03",...,"10"}`)  
    `./script_all.sh`  
 
 ***This page is still under revision!***
