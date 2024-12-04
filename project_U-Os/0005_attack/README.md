@@ -71,6 +71,17 @@ We recorded 10000 traces (stored in 100 ZIP files) for testing our attack.
 7. **Key enumeration**  
    With the probability tables, we apply the key enumeration algorithm to enumerate up to 100000 candidates to estimate the success rate within this computation capacity.  
 
+   _byte attack_:  
+   `cd key_enumeration_bytes/`  
+   `./script_all.sh`  
+
+   _16-bit attack_:  
+   `cd key_enumeration_16bits/`  
+   `./script_all.sh`  
+
+   _loopy attack_:  
+   `cd key_rank_estimate_loopy/`  
+   `./script_all.sh`  
 
 ***This page is still under revision!***
 <!--
