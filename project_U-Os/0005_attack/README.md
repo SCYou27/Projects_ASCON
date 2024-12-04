@@ -69,7 +69,7 @@ We recorded 10000 traces (stored in 100 ZIP files) for testing our attack.
    `./script_all.sh`  
 
 7. **Key enumeration**  
-   With the probability tables, we apply the key enumeration algorithm to enumerate up to 100000 candidates to estimate the success rate within this computation capacity.  
+   With the probability tables, we apply the key enumeration algorithm to enumerate up to 100000 candidates to estimate the success rate within this computation capacity. We implement this enumeration step assuming that the attacker can access only a pair of plaintext and cipher+tag.   
 
    _byte attack_:  
    `cd key_enumeration_bytes/`  
@@ -80,12 +80,30 @@ We recorded 10000 traces (stored in 100 ZIP files) for testing our attack.
    `./script_all.sh`  
 
    _loopy attack_:  
+   `cd key_enumeration_loopy/`  
+   `./script_all.sh`  
+
+8. **Rank estimation**  
+   We apply the histogram-based rank estimate algorithm to evaluate our attacks.   
+
+   _key attack_:  
+   `cd key_rank_estimate_keys/`  
+   `./script_all.sh`  
+
+   _byte attack_:  
+   `cd key_rank_estimate_bytes/`  
+   `./script_all.sh`  
+
+   _16-bit attack_:  
+   `cd key_rank_estimate_16bits/`  
+   `./script_all.sh`  
+
+   _loopy attack_:  
    `cd key_rank_estimate_loopy/`  
    `./script_all.sh`  
 
-***This page is still under revision!***
 <!--
-
+***This page is still under revision!***
 <ul>
 <li>"template_attack_loopy_D99_LXX/" to "template_attack_loopy_D99_L04/",</li>
 </ul>
