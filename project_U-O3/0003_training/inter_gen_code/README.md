@@ -1,11 +1,16 @@
-1. initialization (make directories)
-   ./init.sh
+## Tasks in this folder
 
-2. generate data for the 400 data sets
-   python3 inter_gen.py 400
+1. initialize (make directories):  
+	`./init.sh`  
 
-3. package the data
-   ./pack.sh
+2. generate data for the 400 data sets:  
+	`python3 inter_gen.py 400`  
 
-4. if we want to restart:
-   ./clean.sh 
+3. pack up the data:  
+	`./pack.sh`  
+
+4. all-in-one script:  
+	`./script_all.sh`  
+   
+5. clean the generated data to restart:  
+	`./clean.sh`  
