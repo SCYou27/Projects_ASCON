@@ -8,24 +8,20 @@ This contains 12 experiements with diffferent scenarios as follows.
    - Case 1 _the key (direct) attack_: Tables for 8-bit key fragments with probabilities estimated by only key templates  
    - Case 2 _the byte attack_: Tables for 8-bit key fragments with probabilities estimated after belief propagation on information from templates for the key and intermediate values involved in the tag generation step  
    - Case 3 _the 16-bit attack_: Tables for 16-bit key fragments with probabilities estimated after belief propagation on information from templates for the key and intermediate values involved in the tag generation step  
-   - Case 4 _the loopy (bit) attack_: Tables for 1-bit key fragments with probabilities estimated after loopy belief propagation on marginalized information from templates for all targeted intermediate values in the AEAD procedure
+   - Case 4 _the loopy (bit) attack_: Tables for 1-bit key fragments with probabilities estimated after loopy belief propagation on marginalized information from 8-bit templates for all targeted intermediate values in the AEAD procedure
 
 **U-O3 experiments:**
    - Case 5 _the key (direct) attack_: Tables for 8-bit key fragments with probabilities estimated by only key templates
    - Case 6 _the byte attack_: Tables for 8-bit key fragments with probabilities estimated after belief propagation on information from templates for the key and intermediate values involved in the tag generation step
    - Case 7 _the 16-bit attack_: Tables for 16-bit key fragments with probabilities estimated after belief propagation on information from templates for the key and intermediate values involved in the tag generation step
-   - Case 8 _the loopy (bit) attack_: Tables for 1-bit key fragments with probabilities estimated after loopy belief propagation on marginalized information from templates for all targeted intermediate values in a the AEAD procedure
+   - Case 8 _the loopy (bit) attack_: Tables for 1-bit key fragments with probabilities estimated after loopy belief propagation on marginalized information from 8-bit templates for all targeted intermediate values in a the AEAD procedure
 
 **M-Os experiments:**
    - Case  9 _the key (direct) O attack_: Tables for 8-bit H/L key fragments with probabilities estimated by only key templates
    - Case 10 _the byte O attack_: Tables for 8-bit H/L key fragments with probabilities estimated after belief propagation on information from templates for the key and intermediate values involved in the tag generation step
    - Case 11 _the key (direct) S attack_: Tables for 8-bit E/O key fragments with probabilities estimated by only key templates
    - Case 12 _the byte S attack_: Tables for 8-bit E/O key fragments with probabilities estimated after belief propagation on information from templates for the key and intermediate values involved in the tag generation step
-<!--
 
-<p>The remaining source code for our Julia implementation of key enumeration and rank estimate will be released here soon ...</p>
-
--->
 
 The Makefile contains the following steps:
 
