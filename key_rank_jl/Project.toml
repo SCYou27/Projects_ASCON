@@ -1,3 +1,6 @@
 [deps]
 CLSCA = "ced19f7f-8d5f-41ff-80e8-c690b18511a9"
 NPZ = "15e1cf62-19b3-5cfa-8e77-841668bca605"
+
+[sources]
+CLSCA = {url = "https://github.com/mgkuhn/CLSCA.git"}
