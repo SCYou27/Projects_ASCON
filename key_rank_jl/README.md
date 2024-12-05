@@ -1,6 +1,6 @@
 # A fast Julia implementation of the key-enumeration and rank-estimation steps
 
-We provide a Julia implementation of the key-enumeration and rank-estimation steps to estimate the average rank for the correct key, given probability tables for the candidates of key fragments and the knowledge of the correct key.
+We provide a Julia implementation of the key-enumeration and rank-estimation steps to estimate the average rank for the correct key (logarithmic guessing entropy, LGE), given probability tables for the candidates of key fragments and the knowledge of the correct key.
 
 This contains 12 experiements with diffferent scenarios as follows.
 
@@ -8,13 +8,13 @@ This contains 12 experiements with diffferent scenarios as follows.
    - Case 1 _the key (direct) attack_: Tables for 8-bit key fragments with probabilities estimated by only key templates  
    - Case 2 _the byte attack_: Tables for 8-bit key fragments with probabilities estimated after belief propagation on information from templates for the key and intermediate values involved in the tag generation step  
    - Case 3 _the 16-bit attack_: Tables for 16-bit key fragments with probabilities estimated after belief propagation on information from templates for the key and intermediate values involved in the tag generation step  
-   - Case 4 _the loopy (bit) attack_: Tables for 1-bit key fragments with probabilities estimated after loopy belief propagation on marginalized information from templates for all targeted intermediate values in a full AEAD procedure
+   - Case 4 _the loopy (bit) attack_: Tables for 1-bit key fragments with probabilities estimated after loopy belief propagation on marginalized information from templates for all targeted intermediate values in the AEAD procedure
 
 **U-O3 experiments:**
    - Case 5 _the key (direct) attack_: Tables for 8-bit key fragments with probabilities estimated by only key templates
    - Case 6 _the byte attack_: Tables for 8-bit key fragments with probabilities estimated after belief propagation on information from templates for the key and intermediate values involved in the tag generation step
    - Case 7 _the 16-bit attack_: Tables for 16-bit key fragments with probabilities estimated after belief propagation on information from templates for the key and intermediate values involved in the tag generation step
-   - Case 8 _the loopy (bit) attack_: Tables for 1-bit key fragments with probabilities estimated after loopy belief propagation on marginalized information from templates for all targeted intermediate values in a full AEAD procedure
+   - Case 8 _the loopy (bit) attack_: Tables for 1-bit key fragments with probabilities estimated after loopy belief propagation on marginalized information from templates for all targeted intermediate values in a the AEAD procedure
 
 **M-Os experiments:**
    - Case  9 _the key (direct) O attack_: Tables for 8-bit H/L key fragments with probabilities estimated by only key templates
